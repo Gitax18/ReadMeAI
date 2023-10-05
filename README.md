@@ -28,6 +28,6 @@ The README.md Generator web interface allows you to customize the generated cont
 
 ## Support
 
-If you encounter any issues or have questions, please feel free to [create an issue](https://github.com/Gitax18/readme-ai-generator) on the repository. We're here to help!
+If you encounter any issues or have questions, please feel free to [create an issue](https://github.com/Gitax18/readme-ai-generator/issues) on the repository. We're here to help!
 
 Happy coding! 🚀
