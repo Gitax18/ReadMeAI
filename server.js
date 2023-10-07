@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 // routes
-const userRoutes = require('./routes/user')
 const appRoutes = require('./routes/app')
 
 const app = express();
@@ -16,7 +15,6 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 // routes
-app.use(userRoutes);
 app.use(appRoutes);
 
 app.listen(3000,()=>{
