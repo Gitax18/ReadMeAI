@@ -1,45 +1,33 @@
-// import 'fs';
-const axios = require('axios');
-const fs = require('fs');
+
+const { TextServiceClient } = require("@google-ai/generativelanguage").v1beta2;
+
+const { GoogleAuth } = require("google-auth-library");
 
 
-exports.getData = async (template,code, description) => {
-    const temp = `
+const MODEL_NAME = "models/text-bison-001";
+const API_KEY = "AIzaSyBWBnCwyElOimCCRk3osxShW_cJCqdHCeQ";
+
+const client = new TextServiceClient({
+  authClient: new GoogleAuth().fromAPIKey(API_KEY),
+});
+
+exports.getData = async (template, code, description) => {
+    const prompt = `
     ${template}
 
-    Here is the codesnippet : ${code} \n and here is the code description: ${description}
+    Here is the codesnippet : ${code.slice(0,-1)} \n and here is the code description: ${description.slice(0,-1)}
 
     Plese Generate Output in markdown code.
     `;
 
-    console.log(temp)
-
-    const options = {
-        method: 'POST',
-        url: 'https://open-ai21.p.rapidapi.com/conversationgpt35',
-        headers: {
-          'content-type': 'application/json',
-          'X-RapidAPI-Key': 'e8460fc7acmsh6f7f2adc14ad7e2p1cc4ffjsn171edd349e19',
-          'X-RapidAPI-Host': 'open-ai21.p.rapidapi.com'
+    const response = await client.generateText({
+        model: MODEL_NAME,
+        prompt: {
+            text: prompt,
         },
-        data: {
-          messages: [
-            {
-              role: 'user',
-              content: temp
-            }
-          ],
-          web_access: false,
-          stream: false
-        }
-    };
+    });
 
-    try {
-      const response = await axios.request(options);
-      return response.data;
-    } catch (error) {
-        console.error(error);
-        return {BOT: 'Error occured in fetching data from API.'};
-    } 
-}
-
+    const data = JSON.stringify(response, null, 2);
+    const output = (JSON.parse(data))[0]['candidates'][0]['output'].slice(3).slice(0, -3);
+    return output;
+};
