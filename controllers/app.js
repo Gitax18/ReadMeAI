@@ -28,7 +28,7 @@ exports.postApp = async (req, res)=>{
     const code = req.body.code;
     console.log('incoming request', req.body);
     const description = req.body.description;
-    const data = await palmApi.getData(template, code, description);
+    const data = await palmApi.getData2(template, code, description);
     console.log('data from api', data);
     res.render('output', {
         pageTitle: 'DocAI Generator',

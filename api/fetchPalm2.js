@@ -13,7 +13,7 @@ const client = new TextServiceClient({
   authClient: new GoogleAuth().fromAPIKey(API_KEY),
 });
 
-exports.getData = async (template, code, description) => {
+exports.getData2 = async (template, code, description) => {
     const prompt = `
     ${template}
 
@@ -22,17 +22,29 @@ exports.getData = async (template, code, description) => {
     Plese Generate Output in markdown code.
     `;
 
-    client
-    .generateText({
+    // client.generateText({
+    //     model: MODEL_NAME,
+    //     prompt: {
+    //         text: prompt,
+    //     },
+    // })
+    // .then((result) => {
+    //     const data = JSON.stringify(result, null, 2);
+    //     const output = (JSON.parse(data))[0]['candidates'][0]['output'].slice(3).slice(0, -3);
+    //     console.log('output is : ',output);
+    //     return output;
+    // });
+
+    // using async await
+    const response = await client.generateText({
         model: MODEL_NAME,
         prompt: {
             text: prompt,
         },
-    })
-    .then((result) => {
-        const data = JSON.stringify(result, null, 2);
-        const output = (JSON.parse(data))[0]['candidates'][0]['output'].slice(3).slice(0, -3);
-        console.log(output);
-        return output;
     });
+
+    const data = JSON.stringify(response, null, 2);
+    const output = (JSON.parse(data))[0]['candidates'][0]['output'].slice(3).slice(0, -3);
+    console.log('output is : ',output);
+    return output;
 };
