@@ -24,8 +24,9 @@ Check repo [issues](https://github.com/Gitax18/readme-ai-generator/issues) here:
 
 **Node.js must be installed in your local machine**
 
+**For New Forkers**
 1.Fork the Repository
-2.Clone it to your Local machine
+2.Clone it to your Local machine 
 3.Change to project directory
 
 ```bash
@@ -52,9 +53,37 @@ Check repo [issues](https://github.com/Gitax18/readme-ai-generator/issues) here:
 
 7.Then the server will be start at [localhost:3000](http://localhost:3000/)
 
+**For Old Forkers (Already Cloned)**
+1. Pull the New Data
+
+```bash
+    git pull origin main
+```
+
+3.Switch current branch to firstMerge branch
+
+```bash
+    git switch firstMerge
+```
+
+4.Reinstall the dependencies
+
+```bash
+    npm install
+```
+
+5.Start the server
+
+```bash
+    npm start
+```
+
+6.Then the server will be start at [localhost:3000](http://localhost:3000/)
+
 ## Usage Guide
 Since there is issue with the form upload please don't upload any file and add space in the description input and click generate button.
 You will see the markdown file content as html output and to see markdown file:
+
 1. go to project directory.
 2. go to data.
 3. open output\.md
