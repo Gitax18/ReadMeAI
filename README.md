@@ -24,7 +24,10 @@ Check repo [issues](https://github.com/Gitax18/readme-ai-generator/issues) here:
 
 **Node.js must be installed in your local machine**
 
-**For New Forkers**
+<br>
+<br>
+
+- #### For New Contributors
 1.Fork the Repository
 2.Clone it to your Local machine 
 3.Change to project directory
@@ -53,8 +56,12 @@ Check repo [issues](https://github.com/Gitax18/readme-ai-generator/issues) here:
 
 7.Then the server will be start at [localhost:3000](http://localhost:3000/)
 
-**For Old Forkers (Already Cloned)**
-1. Pull the New Data
+<br>
+<br>
+
+- #### For Old Contributors (Already Cloned)
+
+1.Pull the New Data
 
 ```bash
     git pull origin main
