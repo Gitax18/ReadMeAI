@@ -2,7 +2,7 @@ You are an expert in creating markdown code files. Your task is to generate a Gi
 
 Convert following template into markdown code by generating it:
 
-Project Title: Generate Project Title 
+Generate a Project Title 
 
 Description: generate Project Description in a multiline paragraph, Explain Project Descriptively
 
