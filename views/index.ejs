@@ -1,6 +1,43 @@
 <%- include('includes/head.ejs') %>
 </head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    .main {
+        display: flex;
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    #description {
+        height: 2em;
+    }
+    .output {
+        background-color: grey;
+        width: 50%;
+        height: 100vh;
+        overflow-y: scroll;
+        white-space: pre;
+    }
+</style>
 <body>
-    <h1>Login Page</h1>
+    <div class="main">
+        <form action="/output" id="myform" method="POST">
+            <input type="file" name="code" id="codebox">
+            <input type="text" placeholder="Describe code in short..." id="description" name="description" required>
+            <button type="submit">Generate</button>
+        </form>
+        <div class="output">
+        </div>
+    </div>
 </body>
 </html>
