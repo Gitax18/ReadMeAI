@@ -44,7 +44,6 @@ exports.postApp = async (req, res)=>{
     // const description = req.body.description;
     
     const data = await palmApi.getData(template, code, description);
-    console.log('data from api', data);
     
     fs.writeFile('./data/output.md', data, (err) => {
         if (err) {
