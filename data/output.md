@@ -1,7 +1,7 @@
 
 # Project Title
 
-Description: This project is a simple code snippet that adds two numbers and prints the sum and product of the two numbers.
+Description: This project is a simple calculator that adds two numbers and prints the sum and product of the two numbers.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ Description: This project is a simple code snippet that adds two numbers and pri
 
 ## Installation
 
-To install this project, follow these steps:
+To install this project, you can use the following steps:
 
 1. Clone the repository to your local machine.
 2. Install the dependencies by running the following command:
@@ -25,37 +25,54 @@ npm install
 
 ## Usage
 
-To use this project, follow these steps:
+To use this project, you can follow the following steps:
 
-1. Import the project into your code.
-2. Call the `addTwoNumbers` function with the two numbers you want to add.
-3. The function will return the sum of the two numbers.
+1. Open the terminal in the project directory.
+2. Run the following command to start the project:
+
+```
+npm start
+```
+
+The project will start running on port 3000. You can access the project in your browser by visiting the following URL:
+
+```
+http://localhost:3000
+```
 
 ## Code
 
-```
-const addTwoNumbers = (a, b) => {
-  const sum = a + b;
-  const product = a * b;
+The code for this project is located in the `src` directory. The following is a list of the files in the `src` directory:
 
-  console.log(`The sum of ${a} and ${b} is ${sum}`);
-  console.log(`The product of ${a} and ${b} is ${product}`);
-};
-```
+- `index.js`: This file contains the main code for the project.
+- `utils.js`: This file contains utility functions that are used in the project.
 
 ## Code Explanation
 
-This code snippet is a simple example of how to add two numbers and print the sum and product of the two numbers. The `addTwoNumbers` function takes two numbers as arguments and returns the sum of the two numbers. The function also prints the sum and product of the two numbers to the console.
+The following is an explanation of the code in the `index.js` file:
+
+```
+const a = 2;
+const b = 3;
+
+const sum = a + b;
+const product = a * b;
+
+console.log(`The sum of ${a} and ${b} is ${sum}`);
+console.log(`The product of ${a} and ${b} is ${product}`);
+```
+
+The first two lines of code declare two variables, `a` and `b`, and assign them the values of 2 and 3, respectively. The next two lines of code calculate the sum and product of `a` and `b`, and store the results in the variables `sum` and `product`, respectively. The final two lines of code print the sum and product of `a` and `b` to the console.
 
 ## Contributing
 
-To contribute to this project, follow these steps:
+If you would like to contribute to this project, you can follow the following steps:
 
 1. Fork the repository to your own account.
-2. Create a new branch for your changes.
-3. Make your changes and commit them to your branch.
-4. Push your changes to your fork.
-5. Create a pull request to the main repository.
+2. Make a new branch for your changes.
+3. Implement your changes in the new branch.
+4. Commit your changes to the branch.
+5. Create a pull request to merge your changes into the main branch.
 
 ## License
 
