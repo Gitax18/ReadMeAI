@@ -6,20 +6,22 @@ const converter = new showdown.Converter();
 
 
 const palmApi = require('../api/fetchPalm');
-const code = `
-const a = 2;
-const b = 3;
 
-const sum = a + b;
-const product = a * b;
+// const code = `
+// const a = 2;
+// const b = 3;
 
-console.log(\`The sum of \${a} and \${b} is \${sum}\`);
-console.log(\`The product of \${a} and \${b} is \${product}\`);
-`
-const description = 'This is a simple code snippet that adds two numbers and prints the sum and product of the two numbers.';
+// const sum = a + b;
+// const product = a * b;
 
+// console.log(\`The sum of \${a} and \${b} is \${sum}\`);
+// console.log(\`The product of \${a} and \${b} is \${product}\`);
+// `
+// const description = 'This is a simple code snippet that adds two numbers and prints the sum and product of the two numbers.';
+
+
+// getting template
 let template;
-
 fs.readFile('./data/template.txt', 'utf8', (err, data) => {
     if (err) {
         console.error(err)
@@ -29,20 +31,21 @@ fs.readFile('./data/template.txt', 'utf8', (err, data) => {
 });
 
 
-
-
+// getting / 
 exports.getApp = (req, res)=>{
     res.render('index', {
         pageTitle: 'DocAI Generator'
     })
 }
 
+// controller to sent generate readme from incoming data
 exports.postApp = async (req, res)=>{
     console.log('incoming request', req.body);
 
-    // const code = req.body.code;
-    // const description = req.body.description;
+    const code = req.body.code;
+    const description = req.body.description;
     
+    console.log(code, description)
     const data = await palmApi.getData(template, code, description);
     
     fs.writeFile('./data/output.md', data, (err) => {
