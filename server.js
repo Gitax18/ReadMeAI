@@ -17,6 +17,13 @@ app.set('views', 'views');
 // routes
 app.use(appRoutes);
 
+app.use((req, res, next)=>{
+    res.render('404', {
+        pageTitle: 'Error',
+        statusCode: res.statusCode
+    })
+});
+
 app.listen(3000,()=>{
     console.log('server is listening at http://localhost:3000');
 })

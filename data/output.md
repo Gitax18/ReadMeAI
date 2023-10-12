@@ -1,11 +1,9 @@
 
 # Project Title
 
-**Description:**
+Description: This project is a simple calculator that can perform mathematical operations like sum and product. It is built in JavaScript programming language.
 
-This project is a simple calculator that can add, subtract, multiply, and divide two numbers. It is written in JavaScript and uses the [Node.js](https://nodejs.org/en/) runtime environment.
-
-**Table of Contents**
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,76 +12,85 @@ This project is a simple calculator that can add, subtract, multiply, and divide
 - [Contributing](#contributing)
 - [License](#license)
 
-**Installation**
+## Installation
 
-To install this project, you will need to have Node.js installed on your computer. You can download Node.js from the [official website](https://nodejs.org/en/download/).
+To install this project, you will need to have the following dependencies installed:
 
-Once Node.js is installed, you can install this project by running the following command in your terminal:
+- Node.js
+- NPM
+
+Once you have the dependencies installed, you can install the project by running the following command:
 
 ```
-npm install @project-title/core
+npm install
 ```
 
-This will install the project's dependencies and create a `node_modules` folder in your current directory.
+## Usage
 
-**Usage**
+To use this project, you can run the following command:
 
-To use this project, you can import the `Calculator` class from the `@project-title/core` package. For example:
-
-```js
-import { Calculator } from '@project-title/core';
-
-const calculator = new Calculator();
-
-const sum = calculator.add(2, 3);
-const product = calculator.multiply(2, 3);
-
-console.log(`The sum of 2 and 3 is ${sum}`);
-console.log(`The product of 2 and 3 is ${product}`);
+```
+npm start
 ```
 
-**Code**
+This will start the project in development mode. You can then open the browser and navigate to `localhost:3000` to see the project in action.
 
-The following code snippet shows the implementation of the `Calculator` class:
+## Code
 
-```js
-class Calculator {
-  constructor() {
-    this._sum = 0;
-    this._product = 1;
-  }
+The code for this project is located in the `src` directory. The following are the main files in the project:
 
-  add(a, b) {
-    this._sum = this._sum + a + b;
-    return this._sum;
-  }
+- `index.js`: This file contains the main entry point for the project. It starts the server and loads the calculator UI.
+- `calculator.js`: This file contains the logic for the calculator. It handles the user input and performs the mathematical operations.
+- `styles.css`: This file contains the CSS for the calculator UI.
 
-  multiply(a, b) {
-    this._product = this._product * a * b;
-    return this._product;
-  }
-}
+## Code Explanation
+
+The following is an explanation of the code snippets you included above:
+
+```
+// Calculate the sum of two numbers
+const sum = (a, b) => a + b;
+
+// Calculate the product of two numbers
+const product = (a, b) => a * b;
+
+// Get the user input
+const getNumbers = () => {
+  const a = parseInt(document.getElementById('a').value);
+  const b = parseInt(document.getElementById('b').value);
+
+  return [a, b];
+};
+
+// Perform the mathematical operation
+const calculate = (numbers) => {
+  const [a, b] = numbers;
+
+  const result = sum(a, b);
+
+  // Print the result to the console
+  console.log(result);
+};
+
+// Handle the user input
+document.getElementById('calculate').addEventListener('click', () => {
+  const numbers = getNumbers();
+
+  calculate(numbers);
+});
 ```
 
-**Code Explanation**
+## Contributing
 
-The `Calculator` class has two properties: `_sum` and `_product`. These properties are used to store the sum and product of the two numbers that are passed to the `add()` and `multiply()` methods, respectively.
+Contributions to this project are welcome. Please follow the following guidelines when contributing:
 
-The `add()` method adds the two numbers that are passed to it and returns the sum. The `multiply()` method multiplies the two numbers that are passed to it and returns the product.
+- Fork the project on GitHub.
+- Create a new branch for your changes.
+- Make your changes and commit them to your branch.
+- Push your changes to your fork.
+- Create a pull request to the main branch of the project.
 
-**Contributing**
+## License
 
-We welcome contributions to this project. If you would like to contribute, please follow these guidelines:
-
-1. Fork the project on GitHub.
-2. Create a new branch for your changes.
-3. Make your changes and commit them to your branch.
-4. Push your changes to your fork.
-5. Create a pull request on GitHub.
-
-We will review your pull request and merge it into the master branch if it meets our standards.
-
-**License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
