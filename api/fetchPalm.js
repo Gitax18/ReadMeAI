@@ -17,7 +17,7 @@ exports.getData = async (template, code, description) => {
 
     Here is the codesnippet : ${code.slice(0,-1)} \n and here is the code description: ${description.slice(0,-1)}
 
-    Plese Generate Output in markdown code.
+    Please Generate Output in GitHub Flavored Markdown output.
     `;
 
     const response = await client.generateText({

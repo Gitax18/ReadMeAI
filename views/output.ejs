@@ -1,5 +1,67 @@
-<%- include('includes/head.ejs') %>
+<!--  include('includes/head.ejs') %>
+        <link rel="stylesheet" href="/css/output.css">
 </head>
 <body>
-        <%- data %><br>
+        <main>
+                <section id="container-markdown">
+                        <header class="header">
+                                <h1 class="container-title">Markdown</h1>
+                                <button class="container-button">Recompile</button>
+                        </header>
+                        <div class="markdown-holder">
+                                <textarea id="markdown" class="markdown"> = md %></textarea>
+                        </div>
+                </section>
+                
+                <section id="container-preview">
+                        <header class="header">
+                                <h1 class="container-title">Markdown</h1>
+                                <button class="container-button">Recompile</button>
+                        </header>
+                        <div class="preview-holder"> %- html %> </div>
+                </section>
+        </main>
+</body>
+</html> -->
+
+
+<%- include('includes/head.ejs') %>
+<!-- google fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<!-- stylesheets -->
+<link rel="stylesheet" href="/css/edistyles.css">
+</head>
+<body>
+        <header class="header-nav">
+                <h1 class="logo">LOGO</h1>
+        </header>
+        <main class="main">
+
+        <div class="container">
+            <header>
+                <h1>Markdown</h1>
+                <button id="recompile"> Recompile </button>
+            </header>
+            <textarea name="textarea" id="textarea" class="sub-container container-markdown"><%= md %></textarea>
+        </div>
+
+        <div class="container">
+            <header>
+                <h1>Preview</h1>
+                <button> Download </button>
+            </header>
+            <div class="sub-container container-preview">
+                <div class="preview"><%- html %></div>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- showdown cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ionicons cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="/scripts/edi-script.js"></script>
 </body>

@@ -62,9 +62,11 @@ exports.postApp = (req, res)=>{
 
             res.render('output', {
                 pageTitle: 'DocAI Generator',
-                data: html
+                html: html,
+                md: data
             })
     
         }).catch(err => console.log('error occured',err));
-        
+    
+    fs.unlinkSync(`uploads/${code}`)
 }
