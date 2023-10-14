@@ -31,6 +31,7 @@ header{
 .preview p img{
     height: 15rem;
     width: auto;
+    margin: 1.5rem 0;
     position: relative;
 }
 
@@ -40,9 +41,21 @@ p:has(>img){
 
 .img-ribbon{
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 2rem;
+    right: 50%;
+    transform: translateX(50%);
     z-index: 2;
+    /* background-color: #000; */
+    display: flex;
+    gap: .25rem;
+    opacity: 0.5;
+}
+
+.button-img{
+    border: 1px solif black;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
 }
 
 .nav-items{
@@ -94,7 +107,7 @@ p:has(>img){
     color: #000;
 }
 
-button{
+.btn-containers{
     width: 6rem;
     height: 2.5rem;
     display: flex;
