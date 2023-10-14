@@ -7,6 +7,7 @@
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-family: 'Gabarito', cursive;
 }
 
 .container-markdown{
