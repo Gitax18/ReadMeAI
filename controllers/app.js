@@ -32,7 +32,7 @@ fs.readFile('./data/template.txt', 'utf8', (err, data) => {
 });
 
 
-// getting / 
+// getting '/' 
 exports.getApp = (req, res)=>{
     res.render('index', {
         pageTitle: 'DocAI Generator'
@@ -68,5 +68,6 @@ exports.postApp = (req, res)=>{
     
         }).catch(err => console.log('error occured',err));
     
-    fs.unlinkSync(`uploads/${code}`)
+        //deleting files from upload folder
+    // fs.unlinkSync(`uploads/${code}`)
 }
