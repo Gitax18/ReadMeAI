@@ -4,15 +4,14 @@ const converter = new showdown.Converter();
 const ribbonHtml = `
     <div class="img-ribbon">
         <button class="button-img" id="align-left"><span class="material-symbols-outlined">format_align_left</span></button>
-        <button class="button-img" id="align-left"><span class="material-symbols-outlined">format_align_center</span></button>
-        <button class="button-img" id="align-left"><span class="material-symbols-outlined">format_align_right</span></button>
+        <button class="button-img" id="align-center"><span class="material-symbols-outlined">format_align_center</span></button>
+        <button class="button-img" id="align-right"><span class="material-symbols-outlined">format_align_right</span></button>
     </div>
 `   
 
 function createRibbon(img, ind, imgs){
-    // *** Do Not Change following code
     console.log('Function run');
-    console.log(imgs);
+
     const imgp = img.parentElement;
     console.log('Image Paragraph:', imgp);
 
@@ -22,7 +21,23 @@ function createRibbon(img, ind, imgs){
     imgp.style.position = 'relative';
     imgp.innerHTML += ribbonHtml;
 
-    
+    // selecting ribbons for all images
+    const ribbons = [...document.getElementsByClassName('img-ribbon')];
+    ribbons.forEach(rib => {
+        rib.addEventListener('click', (e)=>{
+            const tg = e.target;
+            console.log(tg)
+            if (tg.id === 'align-left'){
+                parentE.style.textAlign = 'left';
+            }
+            if (tg.id === 'align-center'){
+                parentE.style.textAlign = 'left';
+            }
+            if (tg.id === 'align-right'){
+                parentE.style.textAlign = 'right';
+            }
+        })
+    })
     
 }
 
@@ -42,3 +57,4 @@ document.querySelector('#recompile').addEventListener('click', ()=>{
     
 
 })
+
