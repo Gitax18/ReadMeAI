@@ -5,9 +5,14 @@
 }
 
 main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     font-family: 'Gabarito', cursive;
+}
+
+.container{
+    width: 100%;
 }
 
 .container-markdown{
