@@ -45,13 +45,13 @@ window.addEventListener('click',function(e){
 
         switch(align){
             case 'left':
-                target.style.right = '90%';
+                target.style.right = '75%';
                 break;
             case 'center':
                 target.style.right = '50%';
                 break;
             case 'right':
-                target.style.right = '10%';
+                target.style.right = '25%';
                 break;
         }
     }
