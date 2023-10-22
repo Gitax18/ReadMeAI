@@ -28,10 +28,25 @@ document.querySelector('#recompile').addEventListener('click', ()=>{
 
     const imgs = document.querySelector('.preview').getElementsByTagName('img');
 
+
     [...imgs].forEach((img, ind, imgs) => {
-           createRibbon(img, ind, imgs);
+
+            switch(img.alt){
+                case 'Instagram-social':
+                    img.style.height="inherit";
+                break;
+                case 'GitHub-social':
+                    img.style.height="inherit";
+                break;
+                case 'LinkedIn-social':
+                    img.style.height="inherit";
+                break;
+                default:
+                    createRibbon(img, ind, imgs);
+            }
     });
 })
+
 
 
 window.addEventListener('click',function(e){
@@ -72,11 +87,17 @@ function insertAtCursor(myField, myValue) {
     
  }
 const text = document.querySelector('#textarea');
+const sociallinks = {
+    linkdin:'[![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/)',
+    instagram:'[![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/)',
+    github:'[![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)'
+}
 const map = {
     'IMG':'![<alt>](<url>)\n',
-    'CODE':'```<language>\n<write your code...>\n```\n',
+    'CODE':'```<language>\nwrite your code...\n```\n',
     'LIST':'- •\n- •\n- •\n',
-    'URL':'[url tex..](https://www.markdownguide.org/basic-syntax/#code)\n'
+    'URL':'[url tex..](https://www.markdownguide.org/basic-syntax/#code)\n',
+    'SOCIAL':`${sociallinks.github}\n${sociallinks.linkdin}\n${sociallinks.instagram}`
 };
 var buttons = document.querySelectorAll('.ribbon-button')
 buttons.forEach(function(button) {
