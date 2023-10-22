@@ -1,0 +1,31 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form-container">
+
+            <form id="myform" action="/output" method="post" enctype="multipart/form-data">
+                <label for="codebox" class="label-file">
+                    <ion-icon class="icon-upload" name="cloud-upload-outline"></ion-icon>
+                    <span id="upload-text">Click to Upload file</span>
+                </label>
+                <input type="file" name="code" id="codebox">
+                <label for="description" class="label-desc">Describe Your Code in 30 words.</label>
+                <textarea name="description" id="description" required cols="30" rows="10" placeholder="I have built an calculator in JS which can do..."></textarea>
+                <span class="desc-counter"> <span id="counter">0</span> / 65 Words</span>
+                <button  id="btn-submit">Generate</button>
+            </form>
+        </div>
+        <div class="output" id="output">
+        </div>
+    </div>
+
+    <!-- ionicons script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Scripts -->
+    <script src="/scripts/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /* THEME DARK */
+    --dk-primary: #352F44;
+    --dk-secondary: #5C5470;
+    --dk-accent: #B9B4C7;
+    --dk-text: #FAF0E6; 
+
+    /* THEME LIGHT */
+    --lg-primary: #C4DFDF;
+    --lg-secondary: #D2E9E9;
+    --lg-accent: #E3F4F4;
+    --lg-text: #F8F6F4;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--dk-primary);
+    font-family: 'Gabarito', cursive;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.form-container{
+    height: 100vh;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    background-color: var(--dk-secondary);
+}
+
+.label-file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+    height: 12rem ;
+    margin-inline:auto;
+    border: 5px dashed var(--dk-accent);
+}
+
+.icon-upload{
+    font-size: 10rem;
+    color:var(--dk-accent);
+}
+
+#upload-text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--dk-text);
+}
+
+.label-desc{
+    width: 70%;
+    margin: 1rem auto 0;
+    color: var(--dk-text);
+}
+
+#description {
+    height: 10rem;
+    width: 70%;
+    margin: 1rem auto;
+    resize: none;
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    letter-spacing: .75px;
+}
+
+.desc-counter{
+    width: 70%;
+    margin: -12px auto 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--dk-text);
+    text-align: end;
+}
+
+#codebox{
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#btn-submit{
+    color: var(--dk-primary);
+    background-color: var(--dk-text);
+    height: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self:center;
+    width: 10rem;
+    outline: none;
+    border: none;
+}
+
+.output {
+    background-color: var(--dk-accent);
+    width: 50%;
+    height: 100vh;
+    overflow-y: auto;
+    white-space: pre;
+    padding: 2rem;
+    color: var(--dk-primary);
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+

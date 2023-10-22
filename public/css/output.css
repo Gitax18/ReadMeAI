@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-family: 'Gabarito', cursive;
+}
+
+.container{
+    width: 50%;
+}
+
+::selection{
+    background-color: rgb(224, 76, 7);
+}
+
+.container-markdown{
+    display: grid;
+    font-family: monospace;
+    font-size: 1.2em;
+    outline: none;
+    padding: 10px 0px 0px 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    background-color: #333;
+}
+
+.markdown-holder {
+    width: 100%;
+    height: 90%;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-button{
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    background-color: greenyellow;
+    color: #333;
+}
+
+.buttoncontainer{
+    background-color: rgb(83, 83, 83);
+    height: 2.2em;
+    display: flex;
+    justify-content: center ;
+    border-radius: 10px;
+}
+.buttoncontainer>button{
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #000; 
+    width: 5em;
+}
+.ribbon-button>span{
+    width: 100%;
+}
+.ribbon-button:nth-child(5){
+    border-right: none;
+  }
+
+.header{
+    
+}
+
+.tubelight {
+    width: 21em;
+    height: 15px;
+    background-color: #ccc;
+    border-top: 5px solid #333;
+    border-bottom-left-radius: 19px;
+    position: relative;
+    border-bottom-right-radius: 19px;
+}
+
+.bulb {
+    width: inherit;
+    height: 20px;
+    background-color: #fff9ad;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5); */
+    /* filter: drop-shadow(2px 4px 6px rgba(245, 245, 161)); */
+    filter: drop-shadow(2px 10px 22px rgba(245, 245, 176)) blur(4px);
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+
+.output-container::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent; /* or add it to the track */
+  }
+.output-container::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/*  */

@@ -1,0 +1,29 @@
+You are an expert in creating markdown code files. Your task is to generate a GitHub README for a project. Describe the code within the project, provide code snippets, and explain the logic behind it using proper paragraphs, headings (using different heading tags), bullet points, and explanations for comments. The desired output is the markdown code for the README.
+
+Convert following template into markdown code by generating it:
+
+Title: Generate a short and sweet title for the project from the given description in h1 title 
+
+Description: generate Project Description in a multiline paragraph, Explain Project Descriptively
+
+Table of Contents: 
+Add links to all sections. The sections names are the following:
+- Installation
+- Usage
+- Code
+- Code Explanation
+- Contributing
+- License
+
+Installation: Generate instructions on how to install and set up the project, including any dependencies. Use a proper bullets points for this section.
+
+Usage: Generate Explaination to how to use this project, including code examples if necessary. Use a proper paragraph for this section.
+
+Code: Include code  from the project, each with its heading. Use proper code formatting within the markdown. You can also include multiple code snippets here using '''Language-name-here  code ```.
+
+Code Explanation: Generate explanations for the code snippets you included above. Describe the logic behind each code snippet, and explain any important comments within the code. Use proper paragraphs for explanations.
+
+
+Contributing: Generate Explaination on how others can contribute to the project, including guidelines for pull requests and contributions. Use Multiple bullet points for this section and explain it properly.
+
+License: Generate template for the project's license, such as MIT, Apache, or any other applicable license. Use a proper paragraph for this section with atleast 4-5 lines.
