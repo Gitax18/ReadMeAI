@@ -1,4 +1,3 @@
-
 const { TextServiceClient } = require("@google-ai/generativelanguage").v1beta2;
 
 const { GoogleAuth } = require("google-auth-library");
@@ -11,13 +10,14 @@ const client = new TextServiceClient({
   authClient: new GoogleAuth().fromAPIKey(API_KEY),
 });
 
+
 exports.getData = async (template, code, description) => {
     const prompt = `
     ${template}
 
     Here is the codesnippet : ${code.slice(0,-1)} \n and here is the code description: ${description.slice(0,-1)}
 
-    Please Generate Output in GitHub Flavored Markdown output.
+    Please Generate Output in GitHub Flavored Markdown output and to create list in markdown use this format '- 1', '- 2', etc.
     `;
 
     const response = await client.generateText({
