@@ -80,12 +80,16 @@ main{
 .ribbon-button>span{
     width: 100%;
 }
-.ribbon-button:nth-child(5){
+.ribbon-button:nth-child(6){
     border-right: none;
   }
 
-.header{
+/* .header{
     
+} */
+
+p:has(> a > img) {
+    text-align: center;
 }
 
 .tubelight {
