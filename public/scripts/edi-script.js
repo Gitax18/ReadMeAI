@@ -9,7 +9,6 @@ const ribbonHtml = `
 `   
 
 function createRibbon(img, ind, imgs){
-    // * Do Not Change following code
     const imgp = img.parentElement;
 
     imgs[ind] = img;

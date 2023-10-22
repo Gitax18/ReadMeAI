@@ -133,12 +133,16 @@ code{
     display: inline-block;
     white-space: pre-line;
     width: fit-content;
-    padding: 0.5rem;
-    margin: 10px 0px 10px 0px;
+    padding: 0.15rem 0.35rem;
+    margin: 5px 0;
 }
 
 a{
     color: rgb(61, 138, 255);
+}
+
+ol, ul{
+    list-style: circle;
 }
 
 h2, h3, h4, h5, h6{
