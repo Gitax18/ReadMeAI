@@ -81,6 +81,7 @@ form {
     padding: .5rem;
     font-size: 1rem;
     font-family: inherit;
+    outline: none;
     letter-spacing: .75px;
 }
 
@@ -105,9 +106,10 @@ form {
     height: 3rem;
     font-size: 1rem;
     cursor: pointer;
-    align-self: flex-end;
-    margin-right: 5rem;
-    width: 6rem;
+    align-self:center;
+    width: 10rem;
+    outline: none;
+    border: none;
 }
 
 .output {
@@ -121,3 +123,4 @@ form {
     font-size: 1.2rem;
     font-family: monospace;
 }
+
