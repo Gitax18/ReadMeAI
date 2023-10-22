@@ -69,5 +69,5 @@ exports.postApp = (req, res)=>{
         }).catch(err => console.log('error occured',err));
     
         //deleting files from upload folder
-    // fs.unlinkSync(`uploads/${code}`)
+        fs.unlinkSync(`uploads/${code}`)
 }

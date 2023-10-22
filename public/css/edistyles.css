@@ -86,16 +86,22 @@ p:has(>img){
 
 .sub-container{
     font-size: 16px;
-    padding: 1rem;
     width: 100%;
     height: 75vh;
     border: 1px solid #ccc;
-    border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
 
 
+textarea::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #888; /* Set the thumb background color */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
 
 .container-markdown{
     background-color: #6f6f6f;
@@ -103,17 +109,19 @@ p:has(>img){
 
 .container-preview{
     background-color: #ffffff;
+    padding: 10px 0px 0px 10px;
     color: #000;
 }
 
 .btn-containers{
-    width: 6rem;
+    width: 2.5rem;
     height: 2.5rem;
     display: flex;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
     padding-inline: 1rem;
-    background-color: greenyellow;
+    background-color: rgb(224, 76, 7);
     color: #333;
     font-weight: 600;
     cursor: pointer;
@@ -123,8 +131,10 @@ code{
     background-color: #4f4f4f;
     color: #fff;
     display: inline-block;
-    padding: .5rem;
-    margin: 0 .5rem .25rem;
+    white-space: pre-line;
+    width: fit-content;
+    padding: 0.5rem;
+    margin: 10px 0px 10px 0px;
 }
 
 a{

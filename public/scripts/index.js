@@ -38,18 +38,28 @@ form.addEventListener('keypress',(e)=>{
     }
 })
 
-desc.addEventListener('keydown', ()=>{
+desc.addEventListener('keydown', (e)=>{
     const data = desc.value; // getting description value
     descData = data; // adding description value to global variable 
 
     const words = data.split(' ').length; // getting number of words in description
     descCounter.textContent = words; // add words number to counter
+    counterValue = descCounter.innerText;
+    if (counterValue >= 15 && counterValue <= 30) {
+        descCounter.style.color = "green";
+      } else if (counterValue > 30 && counterValue < 50) {
+        descCounter.style.color = "yellow";
+      } else if (counterValue > 50 && counterValue <= 64) {
+        descCounter.style.color = "red";
+      } else if (counterValue >= 65) {
+        descCounter.style.color = "red";
+      }
 })
 
 submitBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     if(fileData !== undefined || descData !== undefined){ // checking fileData and descData must be present
-        if(descData !== undefined && descData.split(' ').length > 30){ // checking if descData, has more than 30 words
+        if(descData !== undefined && descData.split(' ').length >=15 && descData.split(' ').length <=60){ // checking if descData, has more than 30 words
         //    const data = new FormData();
         //    data.append('code', fileData);
         //    data.append('description', descData);
@@ -78,7 +88,7 @@ submitBtn.addEventListener('click', (e)=>{
         //    ***************************************
            form.submit();
         } else{ 
-            alert('Write atleast 30 words to describe projects');
+            alert('Write atleast minimum 15 and maximum 45 words');
         }
     } else{
         alert('please upload file or add description of project')
