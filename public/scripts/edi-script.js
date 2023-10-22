@@ -9,7 +9,6 @@ const ribbonHtml = `
 `   
 
 function createRibbon(img, ind, imgs){
-    // * Do Not Change following code
     const imgp = img.parentElement;
 
     imgs[ind] = img;
@@ -74,7 +73,7 @@ function insertAtCursor(myField, myValue) {
 const text = document.querySelector('#textarea');
 const map = {
     'IMG':'![<alt>](<url>)\n',
-    'CODE':'<code>write your code...</code>\n',
+    'CODE':'```<language>\n<code comes here>\n```\n',
     'LIST':'- •\n- •\n- •\n',
     'URL':'[url tex..](https://www.markdownguide.org/basic-syntax/#code)\n'
 };
@@ -93,6 +92,7 @@ let maphead = {
     'H2':'## here your text...',
     'H3':'### here your text...'
 }
+
 select.addEventListener('change',function(){
     var selectedOption = select.options[select.selectedIndex];
     seter = maphead[selectedOption.value];
