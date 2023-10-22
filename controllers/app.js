@@ -4,19 +4,6 @@ const multer = require('multer');
 
 const palmApi = require('../api/fetchPalm');
 
-// Storage Engine
-// const storage = multer.diskStorage({
-//     destination: function(req, file, cb) {
-//        return cb(null, 'uploads');
-//     },
-//     filename: function (req, file, cb)  {
-//        return cb(null, `${Date.now()}#${file.originalname}`)
-//     }
-//   })
-  
-// const upload = multer({ storage })
-
-
 // showdown converter
 const converter = new showdown.Converter();
 
@@ -68,6 +55,6 @@ exports.postApp = (req, res)=>{
     
         }).catch(err => console.log('error occured',err));
     
-        //deleting files from upload folder
-        fs.unlinkSync(`uploads/${code}`)
+    //deleting files from upload folder
+    fs.unlinkSync(`uploads/${code}`)
 }
