@@ -74,7 +74,7 @@ function insertAtCursor(myField, myValue) {
 const text = document.querySelector('#textarea');
 const map = {
     'IMG':'![<alt>](<url>)\n',
-    'CODE':'<code>write your code...</code>\n',
+    'CODE':'```<language>\n<write your code...>\n```\n',
     'LIST':'- •\n- •\n- •\n',
     'URL':'[url tex..](https://www.markdownguide.org/basic-syntax/#code)\n'
 };
