@@ -1,4 +1,6 @@
 # 🤖 ReadmeAI 📃
+![Badge](https://i.ibb.co/yVb96B0/Untitled-1-01.jpg)
+
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -14,7 +16,20 @@
 
 The README Generator is a platform that allows users to upload a single-file code and describe their project. The AI generates a Markdown code, which can be edited in real-time using a code editor, and the changes are previewed instantly.
 
-## Features
+## Navigation
+- [🤖 ReadmeAI 📃](#-readmeai-)
+  - [Overview](#overview)
+  - [Navigation](#navigation)
+  - [😎 Features](#-features)
+  - [📂 File Structure (MVC)](#-file-structure-mvc)
+  - [💻 Tech Stack](#-tech-stack)
+  - [⚙️ Installation](#️-installation)
+  - [🚀 Usage](#-usage)
+  - [🔮 Features for next release.](#-features-for-next-release)
+  - [🤝Support](#support)
+  - [✍️ Authors](#️-authors)
+
+## 😎 Features
 - **AI-Powered Content**: It uses Google AI to generate meaningful and informative content for your README, including project description, usage, installation, and more.
   
 - **Customization**: You can customize the generated content using a built in *editor* to include or exclude specific sections, ensuring your README reflects your project's unique needs.
@@ -76,11 +91,23 @@ The README Generator is a platform that allows users to upload a single-file cod
 - More trained AI to generate readme for folders rather than file.
 - Custom templates, User can defined what features/section they want in their readme.
 
-## Support
+## 🤝Support
 
 If you encounter any issues or have questions, please feel free to [create an issue](https://github.com/Gitax18/readme-ai-generator/issues) on the repository. We're here to help!
 
 ## ✍️ Authors
 
-- Vijay Banjara (Frontend Developer) -  [GitHub](https://github.com/dev-tashvi)
-- Gitanshu Sankhla (Backend Developer) - [GitHub](https://github.com/Gitax18)
+
+- Vijay Banjara (Frontend Developer) -  
+ [![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dev-tashvi) [![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hii-vijay-banjara/)
+ [![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/brrocode/)
+
+- Gitanshu Sankhla (Backend Developer) - 
+  
+  [![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gitax18) [![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gitanshu-sankhla)
+ [![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/lazydeveloper18)
+
+- Harsh Kumar (Designer) -
+
+   [![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NebulaForged)
+ [![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/nebulaforgedesign/)
