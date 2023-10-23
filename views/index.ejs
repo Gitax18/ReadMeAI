@@ -2,10 +2,17 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="main">
+    <header class="header-nav">
+        <h1 class="logo">ReadMeAI</h1>
+        <div class="tubelight" onclick="toggleEffects(this)">
+            <div class="bulb"></div>
+        </div>
+    </header>
+    <main class="main">
         <div class="form-container">
 
-            <form id="myform" action="/output" method="post" enctype="multipart/form-data">
+            <form id="myform" action="/editor" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="from" value="/">
                 <label for="codebox" class="label-file">
                     <ion-icon class="icon-upload" name="cloud-upload-outline"></ion-icon>
                     <span id="upload-text">Click to Upload file</span>
