@@ -11,6 +11,8 @@ let descData;
 let fileData;
 
 
+sessionStorage.clear();
+
 fileInp.addEventListener('change', (e)=>{
     e.preventDefault();
     const file = fileInp.files[0];
@@ -60,32 +62,7 @@ submitBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     if(fileData !== undefined || descData !== undefined){ // checking fileData and descData must be present
         if(descData !== undefined && descData.split(' ').length >=15 && descData.split(' ').length <=60){ // checking if descData, has more than 30 words
-        //    const data = new FormData();
-        //    data.append('code', fileData);
-        //    data.append('description', descData);
-        //    ***************************************
-            // Send the file to the server using fetch
-            // fetch('output', {
-                // method: 'POST',
-                // body: data,
-                // redirect: 'follow'
-            // })
-            // .then(response => {
-            //     if (response.ok) {
-            //         console.log(response.body)
-            //         console.log( "File uploaded successfully.");
 
-            //     } else {
-            //         console.log(response)
-            //         console.log("File upload failed.");
-            //     }
-            // })
-            // .catch(error => {
-                // console.error('Error:', error);
-                // console.log("fetch failed.");
-            // });
-
-        //    ***************************************
            form.submit();
         } else{ 
             alert('Write atleast minimum 15 and maximum 45 words');
@@ -95,22 +72,3 @@ submitBtn.addEventListener('click', (e)=>{
     }
 
 })
-
-
-// Sending api call to server to send data
-
-// async function generate(data = {}) {
-//     try {
-//         const response = await fetch('/output', {
-//           method: 'POST',
-//         //   headers: {
-//         //     'Content-Type': 'application/json'
-//         //   },
-//           body: data
-//         });
-    
-//         return await response.json();
-//       } catch (error) {
-//         console.log('fetch failed', `${error}`);
-//       }
-// }
