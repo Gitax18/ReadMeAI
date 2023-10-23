@@ -2,3 +2,6 @@ I have built an simple calculater in javascript programming language which has t
   
 ![cars](https://imgs.search.brave.com/_jOtHlhIEA0EPFKGOspRbyMg6cIcFw5LKNOrqgDFF-Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2FyYnV6ei5jb20v/Z2FsbGVyeS1pbWFn/ZXMvMTYwMC8zOTYw/MDAvOTAwLzM5Njk3/My5qcGc)
 
+add hr to ribbon
+UI switch
+combination keys
