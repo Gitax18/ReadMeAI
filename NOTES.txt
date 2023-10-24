@@ -1,48 +1,7 @@
-// TEST CODE
-
-const code = `
-const readline = require('readline');
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-rl.question('Enter the first number: ', (num1) => {
-    rl.question('Enter the second number: ', (num2) => {
-        rl.question('Enter the operation (+, -, *, /): ', (operator) => {
-            let result;
-            switch (operator) {
-                case '+':
-                    result = parseFloat(num1) + parseFloat(num2);
-                    break;
-                case '-':
-                    result = parseFloat(num1) - parseFloat(num2);
-                    break;
-                case '*':
-                    result = parseFloat(num1) * parseFloat(num2);
-                    break;
-                case '/':
-                    result = parseFloat(num1) / parseFloat(num2);
-                    break;
-                default:
-                    console.log('Invalid operator');
-                    return;
-            }
-            console.log(Result: \${result});
-            rl.close();
-        });
-    });
-});
-`;
-
-const description = `
-This is a simple calculator app written in Node.js. It takes two numbers and an operator as input from
- the user and then returns the result of the calculation.
-`;
-
-
 I have built an simple calculater in javascript programming language which has two values and stored in variable and can perform mathematical operation like sum and product and print result to console. 
   
 ![cars](https://imgs.search.brave.com/_jOtHlhIEA0EPFKGOspRbyMg6cIcFw5LKNOrqgDFF-Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2FyYnV6ei5jb20v/Z2FsbGVyeS1pbWFn/ZXMvMTYwMC8zOTYw/MDAvOTAwLzM5Njk3/My5qcGc)
 
+add hr to ribbon
+UI switch
+combination keys

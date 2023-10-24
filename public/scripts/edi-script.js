@@ -1,32 +1,106 @@
+'use strict';
+// Creating showdown converter to convert code
 const converter = new showdown.Converter();
+converter.setFlavor('github');
 
-const ribbonHtml = `
-    <div class="img-ribbon">
-        <button class="button-img" id="left"><span class="material-symbols-outlined" id='left'>format_align_left</span></button>
-        <button class="button-img" id="center"><span class="material-symbols-outlined" id='center'>format_align_center</span></button>
-        <button class="button-img" id="right"><span class="material-symbols-outlined" id='right'>format_align_right</span></button>
-    </div>
-`   
+//  FORMS & CONTAINERS
+const containerMarkdown = document.querySelector("#textarea");
+const containerPreview = document.querySelector(".preview"); 
+const formDownload = document.querySelector('.form-download');
 
-function createRibbon(img, ind, imgs){
-    // * Do Not Change following code
-    const imgp = img.parentElement;
+// BUTTONS
+const btnRecompile = document.querySelector('#recompile');
+const btnDownload = document.querySelector('#download');
+const ribbonButtons = document.querySelectorAll('.ribbon-button');
 
-    imgs[ind] = img;
-    
-    imgp.style.position = 'relative'
-    imgp.innerHTML += ribbonHtml;
+// OTHER ELEMENTS
+const select  = document.getElementById("add-heading");
 
+   
+
+// Map template to add headings
+const mapHeadingTags = {
+    'H1':'# here your text...',
+    'H2':'## here your text...',
+    'H3':'### here your text...'
+};
+
+// Badges for social links
+const sociallinks = {
+    linkdin:'[![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/)',
+    instagram:'[![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/)',
+    github:'[![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)'
 }
 
 
-document.querySelector('#recompile').addEventListener('click', ()=>{
-    let md = document.querySelector('#textarea').value;
+// Map template to add templates of basic tags
+const mapBasicTags = {
+    'IMG':'![<alt>](<url>)\n',
+    'CODE':'```<language>\n<write your code...>\n```\n',
+    'LIST':'- •\n- •\n- •\n',
+    'URL':'[url tex..](https://www.markdownguide.org/basic-syntax/#code)\n',
+    'SOCIAL':`${sociallinks.github}\n${sociallinks.linkdin}\n${sociallinks.instagram}`
+};
+
+
+
+//  ********************************************* FUNCTIONS **********************************
+// Function to add ribbon to images
+function createRibbon(img, ind, imgs){
+    const imgp = img.parentElement;
+    // console.log(imgp)
+    img = imgs[ind];
+    // console.log(imgp.parentElement)
+
+    if(imgp.parentElement.tagName === 'P'){
+        imgp.style.width = 'content-fit';
+        const imgAP = imgp.parentElement;
+        imgAP.querySelectorAll('br').forEach(ele => ele.remove )
+        imgAP.classList.add('paragraph-social')
+        // console.log(imgp.parentElement)
+    }
+
+    imgp.style.position = 'relative';
+    imgp.style.display = 'flex';
+
+}
+
+// function to add md template on cursor position
+function insertAtCursor(myField, myValue) {
+
+    if (myField.selectionStart || myField.selectionStart === 0) {
+        var startPos = myField.selectionStart;
+        var endPos = myField.selectionEnd;
+        myField.value = myField.value.substring(0, startPos)
+            + myValue
+            + myField.value.substring(endPos, myField.value.length);
+    } else {
+        myField.value += myValue;
+    }
+    
+ }
+
+// *************************************************** EVENT LISTENER ****************************************************
+
+window.onload = ()=>{
+    const isPreviousData = sessionStorage.getItem('markdown');
+    if(Boolean(isPreviousData)){
+        containerMarkdown.value = isPreviousData;
+        btnRecompile.click();
+    }
+}
+
+// Making recompile button works
+btnRecompile.addEventListener('click', ()=>{
+    let md = containerMarkdown.value;
     let html = converter.makeHtml(md);
 
-    document.querySelector('.preview').innerHTML = html;
+    // storing current data to sessionStorage
+    sessionStorage.setItem('markdown', md);
 
-    const imgs = document.querySelector('.preview').getElementsByTagName('img');
+    containerPreview.innerHTML = html;
+
+    const imgs = containerPreview.getElementsByTagName('img');
 
 
     [...imgs].forEach((img, ind, imgs) => {
@@ -44,11 +118,45 @@ document.querySelector('#recompile').addEventListener('click', ()=>{
                 default:
                     createRibbon(img, ind, imgs);
             }
+        switch(img.alt){
+            case 'Instagram-social':
+                img.style.height="inherit";
+                break;
+            case 'GitHub-social':
+                img.style.height="inherit";
+                break;
+            case 'LinkedIn-social':
+                img.style.height="inherit";
+                break;
+        }
+        createRibbon(img, ind, imgs);
     });
 })
 
+// Requesting download
+btnDownload.addEventListener('click', (e)=>{
+    e.preventDefault;
+    // removing ribbon from images
+    const imgRibbons = document.querySelectorAll('.img-ribbon');
+    imgRibbons.forEach(rib => rib.remove());
+
+    const html = document.querySelector('#html-inp');
+    const md = document.querySelector('#markdown-inp');
+
+    html.value = containerPreview.innerHTML;
+    md.value = converter.makeMarkdown(html.value); 
+    sessionStorage.clear();
+    formDownload.submit();  
+})
+
+// clearing sessionstorage if user go back to previous page
+window.addEventListener('beforeunload', (e) => {
+    e.returnValue = "All data will be re-generate, current data will be lost"
+    return  "All data will be re-generate, current data will be lost"
+  });
 
 
+// Aligning Images on clicking ribbon icons
 window.addEventListener('click',function(e){
     if(e.target.parentNode.parentNode.className.toLowerCase() === 'img-ribbon'){
         const img = e.target.parentNode.parentNode;
@@ -72,72 +180,51 @@ window.addEventListener('click',function(e){
 })
 
 
-// function to add md template on cursor position
-function insertAtCursor(myField, myValue) {
-
-    if (myField.selectionStart || myField.selectionStart === 0) {
-        var startPos = myField.selectionStart;
-        var endPos = myField.selectionEnd;
-        myField.value = myField.value.substring(0, startPos)
-            + myValue
-            + myField.value.substring(endPos, myField.value.length);
-    } else {
-        myField.value += myValue;
-    }
-    
- }
-const text = document.querySelector('#textarea');
-const sociallinks = {
-    linkdin:'[![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/)',
-    instagram:'[![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/)',
-    github:'[![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)'
-}
-const map = {
-    'IMG':'![<alt>](<url>)\n',
-    'CODE':'```<language>\nwrite your code...\n```\n',
-    'LIST':'- •\n- •\n- •\n',
-    'URL':'[url tex..](https://www.markdownguide.org/basic-syntax/#code)\n',
-    'SOCIAL':`${sociallinks.github}\n${sociallinks.linkdin}\n${sociallinks.instagram}`
-};
-var buttons = document.querySelectorAll('.ribbon-button')
-buttons.forEach(function(button) {
+//  Adding template for basic tags
+ribbonButtons.forEach(function(button) {
     button.addEventListener('click', function(e) {
-        seter = map[e.target.getAttribute('data-value')];
-        insertAtCursor(text, seter);
+        const seter = mapBasicTags[e.target.getAttribute('data-value')];
+        insertAtCursor(containerMarkdown, seter);
     });
 });
 
-// for the head section
-var select  = document.getElementById("add-heading");
-let maphead = {
-    'H1':'# here your text...',
-    'H2':'## here your text...',
-    'H3':'### here your text...'
-}
+// Adding template for headings
 select.addEventListener('change',function(){
-    var selectedOption = select.options[select.selectedIndex];
-    seter = maphead[selectedOption.value];
-    insertAtCursor(text, seter);
+    const selectedOption = select.options[select.selectedIndex];
+    const seter = mapHeadingTags[selectedOption.value];
+    insertAtCursor(containerMarkdown, seter);
 })
 
-function toggleEffects(e){
-    
-}
 
-const container1 = document.querySelector("#textarea");
-const container2 = document.querySelector(".preview");
+// Adding Scynchronous Scrolling
+containerMarkdown.addEventListener("scroll", function() {
+    const scrollPosition = containerMarkdown.scrollTop;
 
-container1.addEventListener("scroll", function() {
-    const scrollPosition = container1.scrollTop;
-
-    container2.scrollTop = scrollPosition;
+    containerPreview.scrollTop = scrollPosition;
 });
 
-container2.addEventListener("scroll", function() {
-    const scrollPosition = container2.scrollTop;
+containerPreview.addEventListener("scroll", function() {
+    const scrollPosition = containerPreview.scrollTop;
 
-    container1.scrollTop = scrollPosition;
+    containerMarkdown.scrollTop = scrollPosition;
 });
 
 
-
+var rotate = false;
+var phonebtn = document.querySelector(".phone");
+phonebtn.addEventListener("click",function(){
+    rotate = !rotate
+    if(rotate){
+        document.querySelector("#rotate-item").style.transform = "rotate(90deg)";
+        document.querySelector(".main").style.flexDirection="column";
+        document.querySelectorAll(".container").forEach(elem=>{
+            elem.style.width="auto";
+        })
+    }else{
+        document.querySelector("#rotate-item").style.transform = "rotate(0deg)";
+        document.querySelector(".main").style.flexDirection="row";
+        document.querySelectorAll(".container").forEach(elem=>{
+            elem.style.width="50%";
+        })
+    }
+})

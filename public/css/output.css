@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #e04c07;
+}
+
 main{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: .25rem;
+    padding-right: 1em;
+	padding-left: 1em;
     font-family: 'Gabarito', cursive;
 }
 
@@ -82,14 +88,22 @@ main{
 }
 .ribbon-button:nth-child(6){
     border-right: none;
-  }
+}
 
-/* .header{
-    
-} */
 
 p:has(> a > img) {
     text-align: center;
+}
+
+#rotate-item{
+    cursor: default !important;
+    font-size: 2em !important;
+}
+
+.light-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5ch;
 }
 
 .tubelight {
@@ -105,13 +119,12 @@ p:has(> a > img) {
 .bulb {
     width: inherit;
     height: 20px;
-    background-color: #fff9ad;
+    background-color: unset;
     position: absolute;
     top: 0px;
     left: 50%;
+    cursor: pointer;
     transform: translateX(-50%);
-    /* box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5); */
-    /* filter: drop-shadow(2px 4px 6px rgba(245, 245, 161)); */
     filter: drop-shadow(2px 10px 22px rgba(245, 245, 176)) blur(4px);
     border-bottom-left-radius: 19px;
     border-bottom-right-radius: 19px;
@@ -127,3 +140,21 @@ p:has(> a > img) {
 }
 
 /*  */
+/*---------- below code is for dark mode ------------ */
+.header-nav-dark{
+    background: transparent;
+}
+.main-dark{
+    padding-right: 1.1em;
+    padding-left: 1.1em;
+}
+.preview-dark{
+    background:#0a0c10;
+	color:white;
+	border:none;	
+}
+.editor-dark{
+    background:#0d1117;
+	color:#e0edf8;
+	border:none;
+}

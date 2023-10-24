@@ -1,5 +1,7 @@
 # CONTRIBUTING
 
+Hey Developers, happy to see you that you want to contribute on this project. Just read the following guidlines to contribute to ReadMeAI
+
 1. Forked the repository.
 2. Clone the repository and change your directory to project directory.
 
@@ -27,9 +29,9 @@
 
 ```bash
     # FEATURE NAME
-    What this feature do.
-    Screenshots.
-    Do you change any existing file (YES/NO)
+    - What this feature does.
+    - Screenshots.
+    - Others....
 ```
 
 7. Wait for the approval/rejection of the pull request by the project maintainers.
@@ -38,5 +40,3 @@
 
 - [Gitanshu sankhla](https://github.com/Gitax18)
 - [Vijay Banjara](https://github.com/dev-tashvi)
-
-"All set bro " [vijay]

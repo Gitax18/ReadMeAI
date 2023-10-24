@@ -1,0 +1,70 @@
+<h1 id="simple-calculator">Simple Calculator</h1>
+<p>A simple calculator built with JavaScript.</p>
+<h2 id="description">Description</h2>
+<p>This project is a simple calculator that can perform basic mathematical operations. It has two input fields for the operands and one output field for the result. The calculator can perform addition, subtraction, multiplication, and division.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#code-explanation">Code Explanation</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To install the project, clone the repository to your local machine.</p>
+<pre><code>git clone https://github.com/your-username/simple-calculator.git</code></pre>
+<p>Once the repository is cloned, install the dependencies by running the following command.</p>
+<pre><code>npm install</code></pre>
+<h2 id="usage">Usage</h2>
+<p>To use the calculator, open the index.html file in a web browser.</p>
+<p>The calculator has two input fields for the operands and one output field for the result. To perform a calculation, enter the operands in the input fields and click on the corresponding operator button. The result will be displayed in the output field.</p>
+<h2 id="code">Code</h2>
+<p>The code for the calculator is located in the <code>src</code> directory. The following are the main files in the project.</p>
+<ul>
+<li><code>index.html</code>: The HTML file for the calculator.</li>
+<li><code>index.js</code>: The JavaScript file for the calculator.</li>
+<li><code>style.css</code>: The CSS file for the calculator.</li>
+</ul>
+<h2 id="code-explanation">Code Explanation</h2>
+<p>The calculator is built using the following JavaScript libraries.</p>
+<ul>
+<li><a href="https://jquery.com/">jQuery</a>: A JavaScript library for DOM manipulation.</li>
+<li><a href="https://mathjs.org/">Math.js</a>: A JavaScript library for mathematical calculations.</li>
+</ul>
+<p>The calculator has two input fields for the operands and one output field for the result. The following code snippet shows how the input fields are created.</p>
+<pre><code>let input1 = document.getElementById("input1");
+let input2 = document.getElementById("input2");
+let output = document.getElementById("output");</code></pre>
+<p>The following code snippet shows how the buttons for the operators are created.</p>
+<pre><code>let addButton = document.getElementById("add");
+let subtractButton = document.getElementById("subtract");
+let multiplyButton = document.getElementById("multiply");
+let divideButton = document.getElementById("divide");</code></pre>
+<p>The following code snippet shows how the event listeners for the buttons are added.</p>
+<pre><code>addButton.addEventListener("click", calculateResult);
+subtractButton.addEventListener("click", calculateResult);
+multiplyButton.addEventListener("click", calculateResult);
+divideButton.addEventListener("click", calculateResult);</code></pre>
+<p>The following code snippet shows how the <code>calculateResult()</code> function is implemented. This function is responsible for performing the mathematical calculation and displaying the result in the output field.</p>
+<pre><code>function calculateResult() {
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Error";
+  }
+}</code></pre>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions to this project are welcome. Please follow the following guidelines when contributing.</p>
+<ul>
+<li>Fork the repository to your local machine.</li>
+<li>Create a new branch for your changes.</li>
+<li>Make your changes and commit them to your branch.</li>
+<li>Push your changes to your remote repository.</li>
+<li>Create a pull request to the main repository.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License.</p>
+<p class="paragraph-social"><a href="https://github.com/" style="position: relative; display: flex;"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub-social" style="height: inherit;"></a><br>
+<a href="https://linkedin.com/" style="position: relative; display: flex;"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn-social" style="height: inherit;"></a><br>
+<a href="https://www.instagram.com/" style="position: relative; display: flex;"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&amp;logo=Instagram&amp;logoColor=white" alt="Instagram-social" style="height: inherit;"></a></p>
