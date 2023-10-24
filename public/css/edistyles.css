@@ -131,7 +131,7 @@ code{
     background-color: #4f4f4f;
     color: #fff;
     display: inline-block;
-    white-space: pre-line;
+    white-space: -webkit-fill-available;
     width: fit-content;
     padding: 0.5rem;
     margin: 10px 0px 10px 0px;
