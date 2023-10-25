@@ -96,7 +96,7 @@ p:has(> a > img) {
 
 
 #rotate-item{
-    cursor: default !important;
+    cursor: pointer !important;
     font-size: 2em !important;
 }
 
