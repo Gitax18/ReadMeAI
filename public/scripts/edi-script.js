@@ -16,8 +16,6 @@ const ribbonButtons = document.querySelectorAll('.ribbon-button');
 // OTHER ELEMENTS
 const select  = document.getElementById("add-heading");
 
-   
-
 // Map template to add headings
 const mapHeadingTags = {
     'H1':'# here your text...',
@@ -32,7 +30,6 @@ const sociallinks = {
     github:'[![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)'
 }
 
-
 // Map template to add templates of basic tags
 const mapBasicTags = {
     'IMG':'![<alt>](<url>)\n',
@@ -42,22 +39,17 @@ const mapBasicTags = {
     'SOCIAL':`${sociallinks.github}\n${sociallinks.linkdin}\n${sociallinks.instagram}`
 };
 
-
-
 //  ********************************************* FUNCTIONS **********************************
 // Function to add ribbon to images
 function createRibbon(img, ind, imgs){
     const imgp = img.parentElement;
-    console.log(imgp)
     img = imgs[ind];
-    console.log(imgp.parentElement)
 
     if(imgp.parentElement.tagName === 'P'){
         imgp.style.width = 'content-fit';
         const imgAP = imgp.parentElement;
         imgAP.querySelectorAll('br').forEach(ele => ele.remove )
         imgAP.classList.add('paragraph-social')
-        console.log(imgp.parentElement)
     }
 
     imgp.style.position = 'relative';
@@ -94,10 +86,16 @@ window.onload = ()=>{
 btnRecompile.addEventListener('click', ()=>{
     let md = containerMarkdown.value;
     let html = converter.makeHtml(md);
-
     // storing current data to sessionStorage
     sessionStorage.setItem('markdown', md);
-
+    
+    try{
+        html.querySelectorAll('.pieces-code-wrapper').forEach(div => {
+            div.remove();
+        })
+    } catch(err) {
+        console.log(err)
+    }
     containerPreview.innerHTML = html;
 
     const imgs = containerPreview.getElementsByTagName('img');
@@ -122,8 +120,8 @@ btnRecompile.addEventListener('click', ()=>{
 btnDownload.addEventListener('click', (e)=>{
     e.preventDefault;
     // removing ribbon from images
-    const imgRibbons = document.querySelectorAll('.img-ribbon');
-    imgRibbons.forEach(rib => rib.remove());
+    // const imgRibbons = document.querySelectorAll('.img-ribbon');
+    // imgRibbons.forEach(rib => rib.remove());
 
     const html = document.querySelector('#html-inp');
     const md = document.querySelector('#markdown-inp');
@@ -168,7 +166,6 @@ window.addEventListener('click',function(e){
     }
     function alignimage(target, align){
         target.parentNode.style.textAlign = align;
-
         switch(align){
             case 'left':
                 target.style.right = '75%';
@@ -199,19 +196,13 @@ select.addEventListener('change',function(){
     insertAtCursor(containerMarkdown, seter);
 })
 
-
 // Adding Scynchronous Scrolling
 containerMarkdown.addEventListener("scroll", function() {
     const scrollPosition = containerMarkdown.scrollTop;
-
     containerPreview.scrollTop = scrollPosition;
 });
 
 containerPreview.addEventListener("scroll", function() {
     const scrollPosition = containerPreview.scrollTop;
-
     containerMarkdown.scrollTop = scrollPosition;
 });
-
-
-

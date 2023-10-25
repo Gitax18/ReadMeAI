@@ -1,5 +1,5 @@
 # 🤖 ReadmeAI 📃
-![Badge](https://i.ibb.co/yVb96B0/Untitled-1-01.jpg)
+[![Untitled-1-01-1.jpg](https://i.postimg.cc/L8XpLZBM/Untitled-1-01-1.jpg)](https://postimg.cc/rKv3LsPh)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -47,13 +47,13 @@ The README Generator is a platform that allows users to upload a single-file cod
 - 📁 **public/** : Contains client side css and scripts.
 - 📁 **routes/** : File to handle routes and to call respective controller function on particular route.
 - 📁 **uploads/** : This directory will hold files that server received from client side, and then deletes them once the session ends.
-- 📃 **server.js** : This file is the main **express server**, this is the file that will execute on starting server. 
+- 📃 **server.js** : This file is the main **express server**, this is the file that will execute on starting server.
 
 ## 💻 Tech Stack
 
 - 🚀 Node.js: Server-side runtime.
 - 🌐 Express: Node.js framework.
-- 🤖 Google PaLM API: Google Pathways Language Model is a 540 billion parameter transformer-based large language model. 
+- 🤖 Google PaLM API: Google Pathways Language Model is a 540 billion parameter transformer-based large language model.
 - 🎨 EJS: Templating engine to render and add dynamic content in your HTML at server.
 - 🎨 CSS: Styling the HTML template.
 - 💼 JavaScript: To add Interactivity in the frontend.
@@ -97,15 +97,16 @@ If you encounter any issues or have questions, please feel free to [create an is
 
 ## ✍️ Authors
 
+- Gitanshu Sankhla (Backend Developer) - 
+  
+  [![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gitax18) [![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gitanshu-sankhla)
+ [![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/lazydeveloper18)
+
 
 - Vijay Banjara (Frontend Developer) -  
  [![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dev-tashvi) [![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hii-vijay-banjara/)
  [![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/brrocode/)
 
-- Gitanshu Sankhla (Backend Developer) - 
-  
-  [![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gitax18) [![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gitanshu-sankhla)
- [![Instagram-social](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/lazydeveloper18)
 
 - Harsh Kumar (Designer) -
 
