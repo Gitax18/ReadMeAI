@@ -28,6 +28,7 @@ header{
 .preview p img{
     max-width: 100%;
     margin: .5rem 0.25rem;
+    
     position: relative;
 }
 
@@ -106,6 +107,7 @@ textarea::-webkit-scrollbar-thumb {
 .container-preview{
     background-color: #ffffff;
     padding: 10px 0px 0px 10px;
+    line-height: 25px;
     color: #000;
 }
 
@@ -126,6 +128,7 @@ textarea::-webkit-scrollbar-thumb {
 code{
     background-color: #4f4f4f;
     color: #fff;
+    white-space: pre;
     display: inline-block;
     white-space: pre-line;
     width: fit-content;

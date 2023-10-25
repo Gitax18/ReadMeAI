@@ -134,6 +134,25 @@ btnDownload.addEventListener('click', (e)=>{
     formDownload.submit();  
 })
 
+var rotate = false;
+var phonebtn = document.querySelector(".phone");
+phonebtn.addEventListener("click",function(){
+    rotate = !rotate
+    if(rotate){
+        document.querySelector("#rotate-item").style.transform = "rotate(90deg)";
+        document.querySelector(".main").style.flexDirection="column";
+        document.querySelectorAll(".container").forEach(elem=>{
+            elem.style.width="auto";
+        })
+    }else{
+        document.querySelector("#rotate-item").style.transform = "rotate(0deg)";
+        document.querySelector(".main").style.flexDirection="row";
+        document.querySelectorAll(".container").forEach(elem=>{
+            elem.style.width="50%";
+        })
+    }
+})
+
 // clearing sessionstorage if user go back to previous page
 window.addEventListener('beforeunload', (e) => {
     e.returnValue = "All data will be re-generate, current data will be lost"

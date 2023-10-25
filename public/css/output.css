@@ -12,6 +12,7 @@ main{
     display: flex;
     flex-direction: row;
     gap: .25rem;
+    padding-inline: 1em;
     font-family: 'Gabarito', cursive;
 }
 
@@ -92,6 +93,19 @@ p:has(> a > img) {
     text-align: center;
 }
 
+
+
+#rotate-item{
+    cursor: default !important;
+    font-size: 2em !important;
+}
+
+.light-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5ch;
+}
+
 .tubelight {
     width: 21em;
     height: 15px;
@@ -105,7 +119,7 @@ p:has(> a > img) {
 .bulb {
     width: inherit;
     height: 20px;
-    background-color: #fff9ad;
+    background-color: unset;
     position: absolute;
     top: 0px;
     left: 50%;
@@ -126,3 +140,21 @@ p:has(> a > img) {
 }
 
 /*  */
+/*---------- below code is for dark mode ------------ */
+.header-nav-dark{
+    background: transparent;
+}
+.main-dark{
+    padding-right: 1.1em;
+    padding-left: 1.1em;
+}
+.preview-dark{
+    background:#0a0c10;
+	color:white;
+	border:none;	
+}
+.editor-dark{
+    background:#0d1117;
+	color:#e0edf8;
+	border:none;
+}

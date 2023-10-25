@@ -8,10 +8,16 @@
 </head>
 <body>
         <header class="header-nav">
-                <h1 class="logo">ReadMeAI</h1>
-                <div class="tubelight" onclick="toggleEffects(this)">
+            <h1 class="logo">ReadMeAI</h1>
+            <div class="light-container">
+                <div class="phone">
+                    <span class="material-symbols-outlined" id="rotate-item">
+                    phone_iphone</span>
+                </div>                    
+                <div class="tubelight">
                     <div class="bulb"></div>
                 </div>
+            </div>
         </header>
         <main class="main">
 
@@ -22,7 +28,7 @@
                     <button class="ribbon-button" ><span class="material-symbols-outlined" data-value="CODE">code</span></button>
                     <button class="ribbon-button" ><span class="material-symbols-outlined" data-value="LIST">list</span></button>
                     <select name="Heading" id="add-heading" style="outline: none;text-transform: uppercase;">
-                        <option disabled selected>Paragraph</option>
+                        <option disabled selected>HEADINGS</option>
                         <option value="H1" style="font-weight:800;">Heading 1</option>
                         <option value="H2" style="font-weight:700;">Heading 2</option>
                         <option value="H3" style="font-weight:500;">Heading 3</option>
@@ -61,5 +67,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script src="/scripts/edi-script.js"></script>
+    <script src="/scripts/edi-script.js"></script>  
+    <script src="/scripts/tubelightBtn.js"></script>
 </body>
