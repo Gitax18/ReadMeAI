@@ -16,8 +16,6 @@ const ribbonButtons = document.querySelectorAll('.ribbon-button');
 // OTHER ELEMENTS
 const select  = document.getElementById("add-heading");
 
-   
-
 // Map template to add headings
 const mapHeadingTags = {
     'H1':'# here your text...',
@@ -32,7 +30,6 @@ const sociallinks = {
     github:'[![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)'
 }
 
-
 // Map template to add templates of basic tags
 const mapBasicTags = {
     'IMG':'![<alt>](<url>)\n',
@@ -41,8 +38,6 @@ const mapBasicTags = {
     'URL':'[url tex..](https://www.markdownguide.org/basic-syntax/#code)\n',
     'SOCIAL':`${sociallinks.github}\n${sociallinks.linkdin}\n${sociallinks.instagram}`
 };
-
-
 
 //  ********************************************* FUNCTIONS **********************************
 // Function to add ribbon to images
@@ -91,10 +86,9 @@ window.onload = ()=>{
 btnRecompile.addEventListener('click', ()=>{
     let md = containerMarkdown.value;
     let html = converter.makeHtml(md);
-
     // storing current data to sessionStorage
     sessionStorage.setItem('markdown', md);
-
+    
     try{
         html.querySelectorAll('.pieces-code-wrapper').forEach(div => {
             div.remove();
@@ -153,7 +147,6 @@ window.addEventListener('click',function(e){
     }
     function alignimage(target, align){
         target.parentNode.style.textAlign = align;
-
         switch(align){
             case 'left':
                 target.style.right = '75%';
@@ -184,19 +177,13 @@ select.addEventListener('change',function(){
     insertAtCursor(containerMarkdown, seter);
 })
 
-
 // Adding Scynchronous Scrolling
 containerMarkdown.addEventListener("scroll", function() {
     const scrollPosition = containerMarkdown.scrollTop;
-
     containerPreview.scrollTop = scrollPosition;
 });
 
 containerPreview.addEventListener("scroll", function() {
     const scrollPosition = containerPreview.scrollTop;
-
     containerMarkdown.scrollTop = scrollPosition;
 });
-
-
-
