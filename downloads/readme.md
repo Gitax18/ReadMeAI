@@ -1,8 +1,16 @@
-# Simple Calculator in JavaScript
+# Simple Calculator
+
+[![GitHub-social](<https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white>)](<https://github.com/>)<br>
+
+[![LinkedIn-social](<https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white>)](<https://linkedin.com/>)<br>
+
+[![Instagram-social](<https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white>)](<https://www.instagram.com/>)
+
+A simple calculator in JavaScript programming language.
 
 ## Description
 
-This project is a simple calculator that can perform basic mathematical operations on two numbers. The user enters two numbers and the calculator performs the following operations: addition, subtraction, multiplication, and division. The results of the operations are then printed to the console.
+This project is a simple calculator that can perform mathematical operations like addition, subtraction, multiplication, and division. It is built using the JavaScript programming language.
 
 ## Table of Contents
 
@@ -26,26 +34,22 @@ To install this project, you will need to have the following dependencies instal
 
 Once you have the dependencies installed, you can install the project by running the following command:
 
-```
-npm install
-```
+<div class="pieces-code-wrapper" style="text-align: left; margin-top: 10px;"><precode language="" precodenum="0"></precode><div class="pieces-btn-wrapper" style="border: none; display: flex; flex-direction: row; opacity: 0; width: auto; transition: opacity 0.3s ease-out 0s; height: 26px; margin-top: 10px; margin-bottom: 10px;"><button class="pieces-btn pieces-copy-and-save" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/pieces.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Copy and Save</span></button><button class="pieces-btn pieces-share" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/link.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Share</span></button><button class="pieces-btn pieces-ask-copilot" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/copilot.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Ask Copilot</span></button></div></div>
 
 ## Usage
 
 To use this project, you can run the following command:
 
-```
-npm start
-```
+<div class="pieces-code-wrapper" style="text-align: left; margin-top: 10px;"><precode language="" precodenum="1"></precode><div class="pieces-btn-wrapper" style="border: none; display: flex; flex-direction: row; opacity: 0; width: auto; transition: opacity 0.3s ease-out 0s; height: 26px; margin-top: 10px; margin-bottom: 10px;"><button class="pieces-btn pieces-copy-and-save" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/pieces.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Copy and Save</span></button><button class="pieces-btn pieces-share" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/link.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Share</span></button><button class="pieces-btn pieces-ask-copilot" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/copilot.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Ask Copilot</span></button></div></div>
 
-This will start the project in development mode. You can then open your browser and navigate to `localhost:3000` to access the calculator.
+This will start the calculator and you will be able to enter your mathematical expressions.
 
 ## Code
 
 The code for this project is located in the `src` directory. The following is a list of the files in the `src` directory:
 
-- `index.js`: This file contains the main logic for the calculator.
-- `utils.js`: This file contains utility functions that are used by the calculator.
+- `index.js`: This file contains the main entry point for the project.
+- `calculator.js`: This file contains the logic for the calculator.
 
 <!-- -->
 
@@ -53,36 +57,21 @@ The code for this project is located in the `src` directory. The following is a 
 
 The following is an explanation of the code for the calculator:
 
-The `index.js` file contains the main logic for the calculator. The file starts by defining two variables, `a` and `b`, to store the two numbers that the user enters. The file then uses the `prompt()` function to get the two numbers from the user.
+The `index.js` file contains the main entry point for the project. It imports the `calculator.js` file and calls the `calculate()` function. The `calculate()` function takes an expression as a parameter and returns the result of the expression.
 
-Once the two numbers have been entered, the file uses the `console.log()` function to print the following to the console:
-
-- The sum of the two numbers
-- The subtraction of the two numbers
-- The product of the two numbers
-- The division of the two numbers
-
-<!-- -->
+The `calculator.js` file contains the logic for the calculator. It defines a function called `calculate()` that takes an expression as a parameter and returns the result of the expression. The `calculate()` function uses the `eval()` function to evaluate the expression and returns the result.
 
 ## Contributing
 
-Contributions to this project are welcome. Please submit pull requests for any changes that you would like to make.
+Contributions to this project are welcome. Please follow the following guidelines when contributing:
 
-## Socials
+- Create a new branch for each feature or bug fix.
+- Write unit tests for your changes.
+- Submit a pull request with your changes.
 
-[![GitHub-social](<https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white>)](<https://github.com/>)<br style="display: none;">
-
-[![LinkedIn-social](<https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white>)](<https://linkedin.com/>)<br style="display: none;">
-
-[![Instagram-social](<https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white>)](<https://www.instagram.com/>)
+<!-- -->
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-<br>
-
-<br>
-
-<br>
+This project is licensed under the MIT License.
 
