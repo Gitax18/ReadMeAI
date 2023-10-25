@@ -48,16 +48,13 @@ const mapBasicTags = {
 // Function to add ribbon to images
 function createRibbon(img, ind, imgs){
     const imgp = img.parentElement;
-    console.log(imgp)
     img = imgs[ind];
-    console.log(imgp.parentElement)
 
     if(imgp.parentElement.tagName === 'P'){
         imgp.style.width = 'content-fit';
         const imgAP = imgp.parentElement;
         imgAP.querySelectorAll('br').forEach(ele => ele.remove )
         imgAP.classList.add('paragraph-social')
-        console.log(imgp.parentElement)
     }
 
     imgp.style.position = 'relative';
@@ -98,6 +95,13 @@ btnRecompile.addEventListener('click', ()=>{
     // storing current data to sessionStorage
     sessionStorage.setItem('markdown', md);
 
+    try{
+        html.querySelectorAll('.pieces-code-wrapper').forEach(div => {
+            div.remove();
+        })
+    } catch(err) {
+        console.log(err)
+    }
     containerPreview.innerHTML = html;
 
     const imgs = containerPreview.getElementsByTagName('img');
@@ -122,8 +126,8 @@ btnRecompile.addEventListener('click', ()=>{
 btnDownload.addEventListener('click', (e)=>{
     e.preventDefault;
     // removing ribbon from images
-    const imgRibbons = document.querySelectorAll('.img-ribbon');
-    imgRibbons.forEach(rib => rib.remove());
+    // const imgRibbons = document.querySelectorAll('.img-ribbon');
+    // imgRibbons.forEach(rib => rib.remove());
 
     const html = document.querySelector('#html-inp');
     const md = document.querySelector('#markdown-inp');
