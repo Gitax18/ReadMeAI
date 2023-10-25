@@ -1,20 +1,14 @@
 var darkmode = localStorage.getItem("darkmode") === "true" ? true : false;
 
-// Apply the dark mode state.
+
+const header = document.querySelector(".header-nav");
+const main = document.querySelector(".main");
+const editor = document.querySelector(".container-markdown");
+const preview = document.querySelector(".container-preview");
+const bulb = document.querySelector(".bulb");
 
 
-document.querySelector(".tubelight").addEventListener('click', function () {
-    darkmode = !darkmode;
-    localStorage.setItem("darkmode", darkmode);
-    setDarkMode(darkmode);
-});
-
-var header = document.querySelector(".header-nav");
-var main = document.querySelector(".main");
-var editor = document.querySelector(".container-markdown");
-var preview = document.querySelector(".container-preview");
-var bulb = document.querySelector(".bulb");
-
+// Function to set darkmode
 function setDarkMode(enabled) {
     if (enabled) {
         document.body.style.background = "#101112";
@@ -33,5 +27,11 @@ function setDarkMode(enabled) {
     }
 }
 
+// Apply the dark mode state.
+document.querySelector(".tubelight").addEventListener('click', function () {
+    darkmode = !darkmode;
+    localStorage.setItem("darkmode", darkmode);
+    setDarkMode(darkmode);
+});
 
 setDarkMode(darkmode);
