@@ -47,13 +47,13 @@ The README Generator is a platform that allows users to upload a single-file cod
 - 📁 **public/** : Contains client side css and scripts.
 - 📁 **routes/** : File to handle routes and to call respective controller function on particular route.
 - 📁 **uploads/** : This directory will hold files that server received from client side, and then deletes them once the session ends.
-- 📃 **server.js** : This file is the main **express server**, this is the file that will execute on starting server. 
+- 📃 **server.js** : This file is the main **express server**, this is the file that will execute on starting server.
 
 ## 💻 Tech Stack
 
 - 🚀 Node.js: Server-side runtime.
 - 🌐 Express: Node.js framework.
-- 🤖 Google PaLM API: Google Pathways Language Model is a 540 billion parameter transformer-based large language model. 
+- 🤖 Google PaLM API: Google Pathways Language Model is a 540 billion parameter transformer-based large language model.
 - 🎨 EJS: Templating engine to render and add dynamic content in your HTML at server.
 - 🎨 CSS: Styling the HTML template.
 - 💼 JavaScript: To add Interactivity in the frontend.
