@@ -17,6 +17,7 @@ const editor_selcetion = document.querySelector("#add-heading");
 const preview_heading = document.querySelector(".preview-heading");
 
 console.log(editor_btns)
+
 // Function to set darkmode
 function setDarkMode(enabled) {
     if (enabled) {
@@ -55,6 +56,7 @@ function setDarkMode(enabled) {
             Element.style.color="black";
         });
         editor_selcetion.style.color="black";
+
     }
 }
 

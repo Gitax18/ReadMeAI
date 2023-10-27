@@ -221,3 +221,4 @@ containerPreview.addEventListener("scroll", function() {
     const scrollPosition = containerPreview.scrollTop;
     containerMarkdown.scrollTop = scrollPosition;
 });
+

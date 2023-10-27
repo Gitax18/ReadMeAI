@@ -146,6 +146,7 @@ p:has(> a > img) {
     background: #222;
 }
 
+
 .main-dark{
     padding-right: 1.1em;
     padding-left: 1.1em;
@@ -160,3 +161,4 @@ p:has(> a > img) {
 	color:#e0edf8;
 	border:none;
 }
+
