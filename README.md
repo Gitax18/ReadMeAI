@@ -1,5 +1,5 @@
 # 🤖 ReadmeAI 📃
-![Badge](https://i.ibb.co/yVb96B0/Untitled-1-01.jpg)
+[![Untitled-1-01-1.jpg](https://i.postimg.cc/L8XpLZBM/Untitled-1-01-1.jpg)](https://postimg.cc/rKv3LsPh)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -47,13 +47,13 @@ The README Generator is a platform that allows users to upload a single-file cod
 - 📁 **public/** : Contains client side css and scripts.
 - 📁 **routes/** : File to handle routes and to call respective controller function on particular route.
 - 📁 **uploads/** : This directory will hold files that server received from client side, and then deletes them once the session ends.
-- 📃 **server.js** : This file is the main **express server**, this is the file that will execute on starting server. 
+- 📃 **server.js** : This file is the main **express server**, this is the file that will execute on starting server.
 
 ## 💻 Tech Stack
 
 - 🚀 Node.js: Server-side runtime.
 - 🌐 Express: Node.js framework.
-- 🤖 Google PaLM API: Google Pathways Language Model is a 540 billion parameter transformer-based large language model. 
+- 🤖 Google PaLM API: Google Pathways Language Model is a 540 billion parameter transformer-based large language model.
 - 🎨 EJS: Templating engine to render and add dynamic content in your HTML at server.
 - 🎨 CSS: Styling the HTML template.
 - 💼 JavaScript: To add Interactivity in the frontend.

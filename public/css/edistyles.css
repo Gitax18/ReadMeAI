@@ -16,17 +16,18 @@ header{
     align-items: center;
     justify-content: space-between;
     padding-inline: 1rem;
-    background-color: #222;
+    background-color: #edede5;
     color: #fff;
 }
 
 .header-nav{
-    background-color: #000;
+    background-color: #222;
 }
 
 .preview p img{
     max-width: 100%;
     margin: .5rem 0.25rem;
+    
     position: relative;
 }
 
@@ -98,12 +99,15 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .container-markdown{
-    background-color: #6f6f6f;
+    background-color: #0d1117;
+    color:#e0edf8;
+	border:none;
 }
 
 .container-preview{
     background-color: #ffffff;
     padding: 10px 0px 0px 10px;
+    line-height: 25px;
     color: #000;
     line-height: 25px;
 }
@@ -112,7 +116,8 @@ textarea::-webkit-scrollbar-thumb {
     width: 2.5rem;
     height: 2.5rem;
     display: flex;
-    border-radius: 50%;
+    border: none;
+    border-radius: 20%;
     align-items: center;
     justify-content: center;
     padding-inline: 1rem;
@@ -121,10 +126,13 @@ textarea::-webkit-scrollbar-thumb {
     font-weight: 600;
     cursor: pointer;
 }
-
+.preview-heading{
+    color: black;
+}
 code{
     background-color: #4f4f4f;
     color: #fff;
+    white-space: pre;
     display: inline-block;
     white-space: pre;
     width: fit-content;
