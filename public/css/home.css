@@ -94,3 +94,38 @@ canvas {
     width: 100%;
     border-radius: 10px;
 }
+
+/* Side Bar */
+.nav-container{
+    height: fit-content;
+    width: fit-content;
+    background-color: #999;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1px;
+    margin-left:1px ;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item{
+    aspect-ratio: 1/1;
+    width: 4rem;
+    display: grid;
+    place-items: center;
+    background-color: #222;
+}
+
+.nav-item a{
+    text-align: center;
+}
+
+.sidebar-logo{
+    height: 2rem;
+    /* aspect-ratio: 1/1; */
+}
