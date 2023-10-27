@@ -39,6 +39,8 @@ main{
     justify-content: space-between;
     padding-inline: 1rem;
     background-color: #333;
+    transition: all 1s;
+    transition: background-color 0.8s, color 0.8s;
 }
 
 .markdown-holder {
@@ -105,7 +107,8 @@ p:has(> a > img) {
 }
 
 .tubelight {
-    width: 21em;
+    filter: sepia(1);
+    width: 13em;
     height: 15px;
     background-color: #ccc;
     border-top: 5px solid #333;
@@ -141,24 +144,32 @@ p:has(> a > img) {
 /*---------- below code is for dark mode ------------ */
 .header-nav-dark{
     background: transparent;
+    transition: background-color 0.5s, color 0.5s;
 }
 .editor-header-dark{
     background: #222;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 
 .main-dark{
     padding-right: 1.1em;
     padding-left: 1.1em;
+    transition: background-color 0.5s, color 0.5s;
+
 }
 .preview-dark{
     background:#0a0c10;
 	color:white;
 	border:none;	
+    transition: background-color 0.5s, color 0.5s;
+
 }
 .editor-dark{
     background:#0d1117;
 	color:#e0edf8;
 	border:none;
+    transition: background-color 0.5s, color 0.5s;
+
 }
 
