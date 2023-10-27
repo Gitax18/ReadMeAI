@@ -20,6 +20,8 @@ const router = express.Router();
 
 router.get('/', appController.getApp);
 
+router.get('/upload', appController.getUpload)
+
 router.post('/editor', upload.single('code'), appController.postApp);
 
 router.post('/download', appController.postDownload);
