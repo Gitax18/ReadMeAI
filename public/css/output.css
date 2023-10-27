@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #e04c07;
-}
 
 main{
     display: flex;
@@ -66,27 +63,28 @@ main{
 }
 
 .buttoncontainer{
-    background-color: rgb(83, 83, 83);
+    background-color: transparent;
     height: 2.2em;
     display: flex;
     justify-content: center ;
     border-radius: 10px;
 }
-.buttoncontainer>button{
-    color: white;
+.ribbon-button{
+    color: black;
     text-align: center;
     background-color: transparent;
     border: none;
     display: flex;
     align-items: center;
-    border-right: 1px solid #000; 
     width: 5em;
 }
 .ribbon-button>span{
     width: 100%;
 }
-.ribbon-button:nth-child(6){
-    border-right: none;
+#add-heading{
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
 }
 
 p:has(> a > img) {
@@ -144,6 +142,11 @@ p:has(> a > img) {
 .header-nav-dark{
     background: transparent;
 }
+.editor-header-dark{
+    background: #222;
+}
+
+
 .main-dark{
     padding-right: 1.1em;
     padding-left: 1.1em;
@@ -158,3 +161,4 @@ p:has(> a > img) {
 	color:#e0edf8;
 	border:none;
 }
+

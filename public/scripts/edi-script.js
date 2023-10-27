@@ -100,7 +100,22 @@ btnRecompile.addEventListener('click', ()=>{
 
     const imgs = containerPreview.getElementsByTagName('img');
 
+
     [...imgs].forEach((img, ind, imgs) => {
+
+            switch(img.alt){
+                case 'Instagram-social':
+                    img.style.height="inherit";
+                break;
+                case 'GitHub-social':
+                    img.style.height="inherit";
+                break;
+                case 'LinkedIn-social':
+                    img.style.height="inherit";
+                break;
+                default:
+                    createRibbon(img, ind, imgs);
+            }
         switch(img.alt){
             case 'Instagram-social':
                 img.style.height="inherit";
@@ -206,3 +221,4 @@ containerPreview.addEventListener("scroll", function() {
     const scrollPosition = containerPreview.scrollTop;
     containerMarkdown.scrollTop = scrollPosition;
 });
+

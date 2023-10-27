@@ -25,6 +25,12 @@ fs.readFile('./data/template.txt', 'utf8', (err, data) => {
 
 // getting '/' 
 exports.getApp = (req, res)=>{
+    res.render('home', {
+        pageTitle: 'ReadMeAI - Home'
+    })
+}
+
+exports.getUpload = (req, res)=>{
     res.render('index', {
         pageTitle: 'ReadMeAI - Upload'
     })
@@ -54,7 +60,7 @@ exports.postApp = (req, res)=>{
         }).catch(err => console.log('error occured',err));
     
     //deleting files from upload folder
-    fs.unlinkSync(`uploads/${code}`)
+    // fs.unlinkSync(`uploads/${code}`)
 }
 
 exports.postDownload = (req, res) => {
