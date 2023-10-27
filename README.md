@@ -59,7 +59,7 @@ The README Generator is a platform that allows users to upload a single-file cod
 - 💼 JavaScript: To add Interactivity in the frontend.
 
 ## ⚙️ Installation
-
+### In Your Local Machine
 1. Clone the repository.
 2. Navigate to the project directory.
 3. Open your terminal and run:
@@ -67,23 +67,35 @@ The README Generator is a platform that allows users to upload a single-file cod
 ```bash
     npm install
 ```
+### In Your Virtual Machine (using Docker)
+1. Clone the repo and navigate to the project directory.
+2. Open the terminal and type the following command:
+```bash
+     docker build -t gitax18/readmeai .
+```
 
 ## 🚀 Usage
-
+### In your Local Machine
 1. Change to the project directory.
 2. Open your terminal and type the following command:
-
 ```bash
     npm start
 ```
-3. The Application will run on [http://localhost:3000](http://localhost:3000)
-***
+3. The Application will run on [http://localhost:3333](http://localhost:3333)
 
+### Using Docker Container
+1. To start the container, type the following command:
+```bash
+    docker run -it -p 3333:3333 gitax18/readmeai
+```
+2. Now the Application will run on [http://localhost:3333](http://localhost:3333)
+
+***
 **NOTE: If the project don't run properly and show crbug error in web console then follow following steps.**
 1. Open VSCode an go to 'Run and Debug' menu in left sidebar.
 2. Click on 'create a launch.json file' and select node.js in pop-up menu.
 3. Now click on green triangular play icon on the top of same 'Run and Debug' sidebar.
-4. Now go to [http://localhost:3000](http://localhost:3000)
+4. Now go to [http://localhost:3333](http://localhost:3333)
 
 ## 🔮 Features for next release.
 
