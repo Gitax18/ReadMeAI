@@ -16,12 +16,13 @@ header{
     align-items: center;
     justify-content: space-between;
     padding-inline: 1rem;
-    background-color: #edede5;
-    color: #fff;
+    background-color: #DDDCDC;
+    color: #050505;
 }
 
 .header-nav{
-    background-color: #222;
+    background-color: #EEEEED;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .preview p img{
@@ -73,17 +74,19 @@ p:has(>img){
     height: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 #textarea{
     resize: none;
     overflow: auto;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .sub-container{
     font-size: 16px;
     width: 100%;
-    height: 80vh;
+    height: calc(98% - 10vh);
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
@@ -99,19 +102,23 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .container-markdown{
-    background-color: #0d1117;
-    color:#e0edf8;
+    background-color: #d6d6cf;
+    color:black;
+    transition: background-color 0.5s, color 0.5s;
 	border:none;
 }
 
 .container-preview{
-    background-color: #ffffff;
+    background-color: #F4F3ED;
     padding: 10px 0px 0px 10px;
     line-height: 25px;
     color: #000;
     line-height: 25px;
+    transition: background-color 0.5s, color 0.5s;
 }
-
+.container-preview>a{
+    color: #D7B867;
+}
 .btn-containers{
     width: 2.5rem;
     height: 2.5rem;
@@ -121,8 +128,8 @@ textarea::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     padding-inline: 1rem;
-    background-color: #e04c07;
-    color: #333;
+    background-color: #3DBCD6;
+    color: rgb(251, 249, 235);
     font-weight: 600;
     cursor: pointer;
 }
@@ -138,6 +145,7 @@ code{
     width: fit-content;
     padding: 0.15rem 0.35rem;
     margin: 5px 0;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 a{

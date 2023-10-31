@@ -72,3 +72,8 @@ submitBtn.addEventListener('click', (e)=>{
     }
 
 })
+window.addEventListener('load',function(){
+    desc.value = " "
+    fileInp.value = ""
+    outputScr.value = " "
+});
