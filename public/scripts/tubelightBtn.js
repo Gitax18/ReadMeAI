@@ -16,7 +16,7 @@ const editor_btns = document.querySelectorAll(".ribbon-button");
 const editor_selcetion = document.querySelector("#add-heading");
 const preview_heading = document.querySelector(".preview-heading");
 
-console.log(editor_btns)
+// console.log(editor_btns)
 // Function to set darkmode
 function setDarkMode(enabled) {
     if (enabled) {

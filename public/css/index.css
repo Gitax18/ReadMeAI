@@ -70,7 +70,6 @@ form {
     display: flex;
     flex-direction: column;
     margin: 5rem;
-    padding: 2rem;
     border-radius: 3rem;
     background-color: var(--dk-secondary);
 }
@@ -149,7 +148,7 @@ form {
     width: 50%;
     height: 100vh;
     overflow-y: auto;
-    white-space: pre;
+    white-space: break-spaces;
     padding: 2rem;
     color: var(--dk-accent);
     font-size: 1.2rem;

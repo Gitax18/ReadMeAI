@@ -1,0 +1,44 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="\css\home.css">
+</head>
+<body>
+    <!-- Side bar -->
+    <aside class="nav-container">
+        <nav class="navbar">
+            <span class="nav-item github">
+                <a href="https://github.com/Gitax18/ReadMeAI">
+                    <img src="/images/logos/gh.png" alt="logos" class="sidebar-logo">
+                </a>
+            </span>
+            <span class="nav-item Docker">
+                <a href="#">
+                    <img src="/images/logos/dh.png" alt="logos" class="sidebar-logo">
+                </a>
+            </span>
+            <span class="nav-item devpost">
+                <a href="https://devpost.com/software/readmeai">
+                    <img src="/images/logos/dp.png" alt="logos" class="sidebar-logo">
+                </a>
+            </span>
+        </nav>
+    </aside>
+
+    <div class="main-container">
+        <div class="canvas-container">
+            <canvas id="canv" width="32" height="15"></canvas>
+        </div>
+        <div class="container">
+            <div class="text-container">
+                <h1>Exceptional <span class="text">README's</span> at  click, just drop  your code.</h1>
+                    <a href="/upload">
+                        <button type="submit" class="start">Explore</button>
+                    </a>
+            </div>
+            <div class="image_container">
+                <img src="/images/pre.png" alt="editor">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/scripts/home.js"></script>
+</body>
+</html>

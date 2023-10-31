@@ -25,6 +25,12 @@ fs.readFile('./data/template.txt', 'utf8', (err, data) => {
 
 // getting '/' 
 exports.getApp = (req, res)=>{
+    res.render('home', {
+        pageTitle: 'ReadMeAI - Home'
+    })
+}
+
+exports.getUpload = (req, res)=>{
     res.render('index', {
         pageTitle: 'ReadMeAI - Upload'
     })
@@ -49,12 +55,18 @@ exports.postApp = (req, res)=>{
                 pageTitle: 'ReadMeAI - Editor',
                 html: html,
                 md: data
-            })
+            });
+            //deleting files from upload folder
+            fs.unlink(`uploads/${code}`, (err) => {
+                if (err) {
+                  console.error(err);
+                  return;
+                }
+                console.log('File deleted successfully');
+              });
             
         }).catch(err => console.log('error occured',err));
     
-    //deleting files from upload folder
-    // fs.unlinkSync(`uploads/${code}`)
 }
 
 exports.postDownload = (req, res) => {

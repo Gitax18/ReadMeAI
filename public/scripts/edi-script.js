@@ -221,3 +221,16 @@ containerPreview.addEventListener("scroll", function() {
     const scrollPosition = containerPreview.scrollTop;
     containerMarkdown.scrollTop = scrollPosition;
 });
+
+// // code editor copy button
+var all_code_box = document.querySelectorAll('code');
+all_code_box.forEach(element => {
+    element.classList.add('code-boxes');
+});
+var got_code_boxes = document.querySelectorAll('.code-boxes');
+got_code_boxes.forEach(element=>{
+    if(element.textContent.split('\n').length>1){
+        element.style.width = "100%";
+        element.style.whiteSpace  = "pre-wrap";
+    }
+})
