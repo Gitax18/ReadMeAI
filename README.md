@@ -53,7 +53,7 @@ The README Generator is a platform that allows users to upload a single-file cod
 - 📁 **uploads/** : This directory will hold files that server received from client side, and then deletes them once the session ends.
 - 📃 **server.js** : This file is the main **express server**, this is the file that will execute on starting server.
 - 📃 **Dockerfile** : This file contains script to containerize project.
-- 
+  
 
 ## 💻 Tech Stack
 
