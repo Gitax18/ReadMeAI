@@ -24,7 +24,11 @@ The README Generator is a platform that allows users to upload a single-file cod
   - [📂 File Structure (MVC)](#-file-structure-mvc)
   - [💻 Tech Stack](#-tech-stack)
   - [⚙️ Installation](#️-installation)
+    - [In Your Local Machine](#in-your-local-machine)
+    - [In Your Virtual Machine (using Docker)](#in-your-virtual-machine-using-docker)
   - [🚀 Usage](#-usage)
+    - [In your Local Machine](#in-your-local-machine-1)
+    - [Using Docker Container](#using-docker-container)
   - [🔮 Features for next release.](#-features-for-next-release)
   - [🤝Support](#support)
   - [✍️ Authors](#️-authors)
@@ -48,6 +52,8 @@ The README Generator is a platform that allows users to upload a single-file cod
 - 📁 **routes/** : File to handle routes and to call respective controller function on particular route.
 - 📁 **uploads/** : This directory will hold files that server received from client side, and then deletes them once the session ends.
 - 📃 **server.js** : This file is the main **express server**, this is the file that will execute on starting server.
+- 📃 **Dockerfile** : This file contains script to containerize project.
+- 
 
 ## 💻 Tech Stack
 
