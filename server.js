@@ -3,8 +3,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+// vars
+const PORT = 3333
+
 // routes
 const appRoutes = require('./routes/app')
+
 
 const app = express();
 
@@ -24,6 +28,6 @@ app.use((req, res, next)=>{
     })
 });
 
-app.listen(3333,()=>{
-    console.log('server is listening at http://localhost:3333');
+app.listen(PORT,()=>{
+    console.log(`server is listening at http://localhost:${PORT}`);
 })
