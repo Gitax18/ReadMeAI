@@ -78,7 +78,7 @@ header{
 form {
     display: flex;
     flex-direction: column;
-    margin: 5rem;
+    margin-top: 1em;
     border-radius: 3rem;
     background-color: transparent;
 }
@@ -165,7 +165,7 @@ form {
     font-family: monospace;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
    .main{
     display: flex;
     width: 100%;
@@ -173,13 +173,16 @@ form {
    }
    .form-container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
    }
    .form-container>form{
-    margin-bottom: 20px !important;
-    margin-top: 20px !important;
+    margin: 0px;
+
    }
    .output{
-    width: 100%;
+    display: none;
    }
 }
 
@@ -192,12 +195,14 @@ form {
        }
        .form-container{
         width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
        }
        .form-container>form{
-        margin-bottom: 20px !important;
-        margin-top: 20px !important;
+        margin: 0px;
        }
        .output{
-        width: 100%;
+        display: none;
        }   
 }

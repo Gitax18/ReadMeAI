@@ -197,6 +197,7 @@ p:has(> a > img) {
 @media screen and (max-width: 767px) {
     .main{
         flex-direction: column;
+        overflow: hidden;
     }
     #codeditor{
         height: 20vh !important;
@@ -208,6 +209,12 @@ p:has(> a > img) {
     .phone{
         visibility: hidden;
     }
+    .light-container{
+        gap: 0px;
+    }
+    .tubelight{
+        width:11em;
+    }
     #mobile-container{
         height: 20vh;
     }
@@ -216,7 +223,7 @@ p:has(> a > img) {
         z-index: 1;
         opacity: 0.9;
         background: #ffffff;
-        width: 95%;
+        width: 92%;
         height: 20vh;
         display: flex;
         justify-content: center;
@@ -226,7 +233,7 @@ p:has(> a > img) {
       /* Text styling */
       .mobile-container p{
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         color: #333;
       }
 }
