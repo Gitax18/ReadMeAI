@@ -1,16 +1,14 @@
-# Simple Calculator
+# Animated 2d Mesh Gradient
+
+A javascript file which will help frontend developers to create animated 2d mesh gradient using Html 5 canvas element and some css 3
+
+![mesh](<https://media.giphy.com/media/aaMe7xemWlR8LwZqyn/giphy.gif>)
 
 [![GitHub-social](<https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white>)](<https://github.com/>)<br>
 
 [![LinkedIn-social](<https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white>)](<https://linkedin.com/>)<br>
 
 [![Instagram-social](<https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white>)](<https://www.instagram.com/>)
-
-A simple calculator in JavaScript programming language.
-
-## Description
-
-This project is a simple calculator that can perform mathematical operations like addition, subtraction, multiplication, and division. It is built using the JavaScript programming language.
 
 ## Table of Contents
 
@@ -25,186 +23,108 @@ This project is a simple calculator that can perform mathematical operations lik
 
 ## Installation
 
-To install the project, clone the repository to your local machine.
+To install this project, simply clone the repo:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
-git clone https://github.com/your-username/simple-calculator.git
-```
-=======
-<div class="pieces-code-wrapper" style="text-align: left; margin-top: 10px;"><precode language="" precodenum="0"></precode><div class="pieces-btn-wrapper" style="border: none; display: flex; flex-direction: row; opacity: 0; width: auto; transition: opacity 0.3s ease-out 0s; height: 26px; margin-top: 10px; margin-bottom: 10px;"><button class="pieces-btn pieces-copy-and-save" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/pieces.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Copy and Save</span></button><button class="pieces-btn pieces-share" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/link.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Share</span></button><button class="pieces-btn pieces-ask-copilot" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/copilot.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Ask Copilot</span></button></div></div>
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
-=======
-```
-git clone https://github.com/your-username/simple-calculator.git
+```bash
+git clone https://github.com/yourusername/yourproject.git
 ```
 
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
+Then, install the dependencies:
 
-Once the repository is cloned, install the dependencies by running the following command.
-
-<div class="pieces-code-wrapper" style="text-align: left; margin-top: 10px;"><precode language="" precodenum="0"></precode><div class="pieces-btn-wrapper" style="border: none; display: flex; flex-direction: row; opacity: 0; width: auto; transition: opacity 0.3s ease-out 0s; height: 26px; margin-top: 10px; margin-bottom: 10px;"><button class="pieces-btn pieces-copy-and-save" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/pieces.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Copy and Save</span></button><button class="pieces-btn pieces-share" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/link.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Share</span></button><button class="pieces-btn pieces-ask-copilot" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/copilot.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Ask Copilot</span></button></div></div>
+```bash
+npm install
+```
 
 ## Usage
 
-To use the calculator, open the index.html file in a web browser.
+To use this project, simply import the `index.js` file into your project:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+```javascript
+import meshGradient from 'mesh-gradient';
+```
 
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
-The calculator has two input fields for the operands and one output field for the result. To perform a calculation, enter the operands in the input fields and click on the corresponding operator button. The result will be displayed in the output field.
+Then, you can use the `meshGradient` function to create a mesh gradient:
 
-<div class="pieces-code-wrapper" style="text-align: left; margin-top: 10px;"><precode language="" precodenum="1"></precode><div class="pieces-btn-wrapper" style="border: none; display: flex; flex-direction: row; opacity: 0; width: auto; transition: opacity 0.3s ease-out 0s; height: 26px; margin-top: 10px; margin-bottom: 10px;"><button class="pieces-btn pieces-copy-and-save" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/pieces.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Copy and Save</span></button><button class="pieces-btn pieces-share" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/link.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Share</span></button><button class="pieces-btn pieces-ask-copilot" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/copilot.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Ask Copilot</span></button></div></div>
+```javascript
+const meshGradient = new meshGradient({
+  width: 300,
+  height: 300,
+});
 
-This will start the calculator and you will be able to enter your mathematical expressions.
-<<<<<<< HEAD
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
-=======
-<div class="pieces-code-wrapper" style="text-align: left; margin-top: 10px;"><precode language="" precodenum="1"></precode><div class="pieces-btn-wrapper" style="border: none; display: flex; flex-direction: row; opacity: 0; width: auto; transition: opacity 0.3s ease-out 0s; height: 26px; margin-top: 10px; margin-bottom: 10px;"><button class="pieces-btn pieces-copy-and-save" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/pieces.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Copy and Save</span></button><button class="pieces-btn pieces-share" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/link.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Share</span></button><button class="pieces-btn pieces-ask-copilot" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/copilot.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Ask Copilot</span></button></div></div>
-
-This will start the calculator and you will be able to enter your mathematical expressions.
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
-=======
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
+meshGradient.draw();
+```
 
 ## Code
 
-The code for the calculator is located in the `src` directory. The following are the main files in the project.
+```javascript
+var c = document.getElementById('canv');
+var $ = c.getContext('2d');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
-- `index.html`: The HTML file for the calculator.
-- `index.js`: The JavaScript file for the calculator.
-- `style.css`: The CSS file for the calculator.
 
-- `index.js`: This file contains the main entry point for the project.
-- `calculator.js`: This file contains the logic for the calculator.
-<<<<<<< HEAD
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
-=======
-- `index.js`: This file contains the main entry point for the project.
-- `calculator.js`: This file contains the logic for the calculator.
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
-=======
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
+var col = function(x, y, r, g, b) {
+  $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+  $.fillRect(x, y, 1,1);
+}
+var R = function(x, y, t) {
+  return( Math.floor(190 + 64*Math.cos( (x*x-y*y)/300 + t )) );
+}
 
-<!-- -->
+var G = function(x, y, t) {
+  return( Math.floor(130 + 64*Math.sin( (x*x*Math.cos(t/4)+y*y*Math.sin(t/3))/300 ) ) );
+}
+
+var B = function(x, y, t) {
+  return( Math.floor(120 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/1100) ));
+}
+
+var t = 0;
+
+var run = function() {
+  for(var x=0;x<=35;x++) {
+    for(var y=0;y<=35;y++) {
+      col(x, y, R(x,y,t), G(x,y,t), B(x,y,t));
+    }
+  }
+  t = t + 0.05;
+  window.requestAnimationFrame(run);
+}
+
+run();
+```
 
 ## Code Explanation
 
-The calculator is built using the following JavaScript libraries.
+The `meshGradient` function takes three arguments:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+- `width`: The width of the mesh gradient in pixels.
+- `height`: The height of the mesh gradient in pixels.
+- `options`: An object with optional properties to customize the mesh gradient.
 
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
-- [jQuery](<https://jquery.com/>): A JavaScript library for DOM manipulation.
-- [Math.js](<https://mathjs.org/>): A JavaScript library for mathematical calculations.
-
-
-
-The calculator has two input fields for the operands and one output field for the result. The following code snippet shows how the input fields are created.
-The `index.js` file contains the main entry point for the project. It imports the `calculator.js` file and calls the `calculate()` function. The `calculate()` function takes an expression as a parameter and returns the result of the expression.
-
-The `calculator.js` file contains the logic for the calculator. It defines a function called `calculate()` that takes an expression as a parameter and returns the result of the expression. The `calculate()` function uses the `eval()` function to evaluate the expression and returns the result.
-
-```
-let input1 = document.getElementById("input1");
-let input2 = document.getElementById("input2");
-let output = document.getElementById("output");
-```
-
-The following code snippet shows how the buttons for the operators are created.
-
-```
-let addButton = document.getElementById("add");
-let subtractButton = document.getElementById("subtract");
-let multiplyButton = document.getElementById("multiply");
-let divideButton = document.getElementById("divide");
-```
-
-The following code snippet shows how the event listeners for the buttons are added.
-
-```
-addButton.addEventListener("click", calculateResult);
-subtractButton.addEventListener("click", calculateResult);
-multiplyButton.addEventListener("click", calculateResult);
-divideButton.addEventListener("click", calculateResult);
-```
-
-The following code snippet shows how the `calculateResult()` function is implemented. This function is responsible for performing the mathematical calculation and displaying the result in the output field.
-
-```
-function calculateResult() {
-  try {
-    display.value = eval(display.value);
-  } catch (error) {
-    display.value = "Error";
-  }
-}
-```
-
-## Contributing
-
-Contributions to this project are welcome. Please follow the following guidelines when contributing.
-
-- Fork the repository to your local machine.
-- Create a new branch for your changes.
-- Make your changes and commit them to your branch.
-- Push your changes to your remote repository.
-- Create a pull request to the main repository.
-
-
-<<<<<<< HEAD
-=======
-The `index.js` file contains the main entry point for the project. It imports the `calculator.js` file and calls the `calculate()` function. The `calculate()` function takes an expression as a parameter and returns the result of the expression.
-
-The `calculator.js` file contains the logic for the calculator. It defines a function called `calculate()` that takes an expression as a parameter and returns the result of the expression. The `calculate()` function uses the `eval()` function to evaluate the expression and returns the result.
-
-## Contributing
-
-Contributions to this project are welcome. Please follow the following guidelines when contributing:
-
-- Create a new branch for each feature or bug fix.
-- Write unit tests for your changes.
-- Submit a pull request with your changes.
-
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
 <!-- -->
-=======
 
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
+The `options` object can have the following properties:
 
-## License
+- `color1`: The starting color of the mesh gradient.
+- `color2`: The ending color of the mesh gradient.
+- `speed`: The speed of the animation, in frames per second.
 
-This project is licensed under the MIT License.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+<!-- -->
 
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
+The `meshGradient` function creates a mesh gradient by drawing a series of lines on the canvas. The lines are drawn using the `col()` function, which takes three arguments:
 
-[![GitHub-social](<https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white>)](<https://github.com/>)<br>
+- `x`: The x-coordinate of the line.
+- `y`: The y-coordinate of the line.
+- `r`, `g`, `b`: The red, green, and blue values of the line.
 
-[![LinkedIn-social](<https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white>)](<https://linkedin.com/>)<br>
+<!-- -->
 
-[![Instagram-social](<https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white>)](<https://www.instagram.com/>)
-<<<<<<< HEAD
-=======
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
-=======
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
-=======
+The `R()`, `G()`, and `B()` functions are used to calculate the red, green, and blue values of each line. These functions use a sinusoidal function to create a smooth gradient.
 
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
+The `run()` function is used to animate the mesh gradient. The `run()` function loops through the mesh gradient, drawing each line at a different time. The `run()` function also uses the `window.requestAnimationFrame()` function to request the next frame of animation.
+
+## Contributing
+
+Contributions are welcome! Please submit pull requests to the [main repository](<https://github.com/yourusername/yourproject>).
+
+## Lice
 

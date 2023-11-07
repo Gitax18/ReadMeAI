@@ -1,10 +1,9 @@
-<h1 id="simple-calculator">Simple Calculator</h1>
+<h1 id="animated-2d-mesh-gradient">Animated 2d Mesh Gradient</h1>
+<p>A javascript file which will help frontend developers to create animated 2d mesh gradient using Html 5 canvas element and some css 3</p>
+<p style="position: relative; display: flex;"><img src="https://media.giphy.com/media/aaMe7xemWlR8LwZqyn/giphy.gif" alt="mesh"></p>
 <p class="paragraph-social"><a href="https://github.com/" style="position: relative; display: flex;"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub-social" style="height: inherit;"></a><br>
 <a href="https://linkedin.com/" style="position: relative; display: flex;"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn-social" style="height: inherit;"></a><br>
 <a href="https://www.instagram.com/" style="position: relative; display: flex;"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&amp;logo=Instagram&amp;logoColor=white" alt="Instagram-social" style="height: inherit;"></a></p>
-<p>A simple calculator in JavaScript programming language.</p>
-<h2 id="description">Description</h2>
-<p>This project is a simple calculator that can perform mathematical operations like addition, subtraction, multiplication, and division. It is built using the JavaScript programming language.</p>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
 <li><a href="#installation">Installation</a></li>
@@ -15,41 +14,75 @@
 <li><a href="#license">License</a></li>
 </ul>
 <h2 id="installation">Installation</h2>
-<p>To install this project, you will need to have the following dependencies installed:</p>
-<ul>
-<li>Node.js</li>
-<li>NPM</li>
-</ul>
-<p>Once you have the dependencies installed, you can install the project by running the following command:</p>
-<div class="pieces-code-wrapper" style="text-align: left; margin-top: 10px;"><pre style="margin-bottom: 0px; margin-top: 0px;"><code>npm install</code></pre><div class="pieces-btn-wrapper" style="border: none; display: flex; flex-direction: row; opacity: 0; width: auto; transition: opacity 0.3s ease-out 0s; height: 26px; margin-top: 10px; margin-bottom: 10px;"><button class="pieces-btn pieces-copy-and-save" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/pieces.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Copy and Save</span></button><button class="pieces-btn pieces-share" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/link.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Share</span></button><button class="pieces-btn pieces-ask-copilot" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/copilot.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Ask Copilot</span></button></div></div>
+<p>To install this project, simply clone the repo:</p>
+<pre><code class="bash language-bash">git clone https://github.com/yourusername/yourproject.git</code></pre>
+<p>Then, install the dependencies:</p>
+<pre><code class="bash language-bash">npm install</code></pre>
 <h2 id="usage">Usage</h2>
-<p>To use this project, you can run the following command:</p>
-<div class="pieces-code-wrapper" style="text-align: left; margin-top: 10px;"><pre style="margin-bottom: 0px; margin-top: 0px;"><code>node index.js</code></pre><div class="pieces-btn-wrapper" style="border: none; display: flex; flex-direction: row; opacity: 0; width: auto; transition: opacity 0.3s ease-out 0s; height: 26px; margin-top: 10px; margin-bottom: 10px;"><button class="pieces-btn pieces-copy-and-save" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/pieces.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Copy and Save</span></button><button class="pieces-btn pieces-share" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/link.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Share</span></button><button class="pieces-btn pieces-ask-copilot" style="width: auto; font-size: 12px; border: 1px solid rgb(33, 33, 33); border-radius: 16px; margin-right: 4px; padding: 4px 6px 4px 4px; line-height: normal; height: fit-content; cursor: pointer; user-select: none; display: flex; align-items: center; background-color: rgb(33, 33, 33); color: rgb(255, 255, 255);"><img src="https://storage.googleapis.com/pieces-web-extensions-cdn/copilot.png" class="pieces-logo" style="margin: 0px 4px 0px 0px; border-radius: 50%; filter: none; float: left; width: 16px; height: 16px;"><span class="pieces-btn-text">Ask Copilot</span></button></div></div>
-<p>This will start the calculator and you will be able to enter your mathematical expressions.</p>
+<p>To use this project, simply import the <code>index.js</code> file into your project:</p>
+<pre><code class="javascript language-javascript">import meshGradient from 'mesh-gradient';</code></pre>
+<p>Then, you can use the <code>meshGradient</code> function to create a mesh gradient:</p>
+<pre><code class="javascript language-javascript">const meshGradient = new meshGradient({
+  width: 300,
+  height: 300,
+});
+
+meshGradient.draw();</code></pre>
 <h2 id="code">Code</h2>
-<p>The code for the calculator is located in the <code>src</code> directory. The following are the main files in the project.</p>
-<ul>
-<li><code>index.js</code>: This file contains the main entry point for the project.</li>
-<li><code>calculator.js</code>: This file contains the logic for the calculator.</li>
-</ul>
+<pre><code class="javascript language-javascript">var c = document.getElementById('canv');
+var $ = c.getContext('2d');
+
+
+var col = function(x, y, r, g, b) {
+  $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+  $.fillRect(x, y, 1,1);
+}
+var R = function(x, y, t) {
+  return( Math.floor(190 + 64*Math.cos( (x*x-y*y)/300 + t )) );
+}
+
+var G = function(x, y, t) {
+  return( Math.floor(130 + 64*Math.sin( (x*x*Math.cos(t/4)+y*y*Math.sin(t/3))/300 ) ) );
+}
+
+var B = function(x, y, t) {
+  return( Math.floor(120 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/1100) ));
+}
+
+var t = 0;
+
+var run = function() {
+  for(var x=0;x&lt;=35;x++) {
+    for(var y=0;y&lt;=35;y++) {
+      col(x, y, R(x,y,t), G(x,y,t), B(x,y,t));
+    }
+  }
+  t = t + 0.05;
+  window.requestAnimationFrame(run);
+}
+
+run();</code></pre>
 <h2 id="code-explanation">Code Explanation</h2>
-<p>The following is an explanation of the code for the calculator:</p>
-<p>The <code>index.js</code> file contains the main entry point for the project. It imports the <code>calculator.js</code> file and calls the <code>calculate()</code> function. The <code>calculate()</code> function takes an expression as a parameter and returns the result of the expression.</p>
-<p>The <code>calculator.js</code> file contains the logic for the calculator. It defines a function called <code>calculate()</code> that takes an expression as a parameter and returns the result of the expression. The <code>calculate()</code> function uses the <code>eval()</code> function to evaluate the expression and returns the result.</p>
-<h2 id="contributing">Contributing</h2>
-<p>Contributions to this project are welcome. Please follow the following guidelines when contributing:</p>
+<p>The <code>meshGradient</code> function takes three arguments:</p>
 <ul>
-<li>Create a new branch for each feature or bug fix.</li>
-<li>Write unit tests for your changes.</li>
-<li>Submit a pull request with your changes.</li>
+<li><code>width</code>: The width of the mesh gradient in pixels.</li>
+<li><code>height</code>: The height of the mesh gradient in pixels.</li>
+<li><code>options</code>: An object with optional properties to customize the mesh gradient.</li>
 </ul>
-<h2 id="license">License</h2>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<p>This project is licensed under the MIT License.</p>
-=======
-<p>This project is licensed under the MIT License.</p>
->>>>>>> d77662116c0ca635fee815190d6a6116a1a59ab4
-=======
-<p>This project is licensed under the MIT License.</p>
->>>>>>> 1e7b52f194ff40e5a3f318ea5f9904c891f3e0c6
+<p>The <code>options</code> object can have the following properties:</p>
+<ul>
+<li><code>color1</code>: The starting color of the mesh gradient.</li>
+<li><code>color2</code>: The ending color of the mesh gradient.</li>
+<li><code>speed</code>: The speed of the animation, in frames per second.</li>
+</ul>
+<p>The <code>meshGradient</code> function creates a mesh gradient by drawing a series of lines on the canvas. The lines are drawn using the <code>col()</code> function, which takes three arguments:</p>
+<ul>
+<li><code>x</code>: The x-coordinate of the line.</li>
+<li><code>y</code>: The y-coordinate of the line.</li>
+<li><code>r</code>, <code>g</code>, <code>b</code>: The red, green, and blue values of the line.</li>
+</ul>
+<p>The <code>R()</code>, <code>G()</code>, and <code>B()</code> functions are used to calculate the red, green, and blue values of each line. These functions use a sinusoidal function to create a smooth gradient.</p>
+<p>The <code>run()</code> function is used to animate the mesh gradient. The <code>run()</code> function loops through the mesh gradient, drawing each line at a different time. The <code>run()</code> function also uses the <code>window.requestAnimationFrame()</code> function to request the next frame of animation.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are welcome! Please submit pull requests to the <a href="https://github.com/yourusername/yourproject">main repository</a>.</p>
+<h2 id="lice">Lice</h2>

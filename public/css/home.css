@@ -126,3 +126,52 @@ canvas {
     height: 1.5rem;
     /* aspect-ratio: 1/1; */
 }
+
+/* mobile queeryss */
+ @media screen and (max-width: 767px) {
+    .canvas-container{
+        height: 35vh;
+        transform: scale(4.9);
+    }
+    .image_container{
+        display: none;
+    }
+}
+  
+  /* Tablet Styles */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .canvas-container{
+        height: 32vh;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 100%);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        gap: 50px;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-30%);
+        padding: 0em 2em 0em 2em;
+    }
+    h1{
+
+        line-height: 1.2em;
+        font-size: 5em;
+        max-width: 18ch;
+        padding-left: 120px;
+        color: white;
+        margin: 0px;
+    }
+
+    .image_container{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .nav-container{
+        top: 45%;
+    }
+  }
