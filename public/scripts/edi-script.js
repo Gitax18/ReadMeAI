@@ -75,6 +75,7 @@ function insertAtCursor(myField, myValue) {
 // *************************************************** EVENT LISTENER ****************************************************
 
 window.onload = ()=>{
+    code_width();
     const isPreviousData = sessionStorage.getItem('markdown');
     if(Boolean(isPreviousData)){
         containerMarkdown.value = isPreviousData;
@@ -84,6 +85,9 @@ window.onload = ()=>{
 
 // Making recompile button works
 btnRecompile.addEventListener('click', ()=>{
+    
+    code_width();
+    
     let md = containerMarkdown.value;
     let html = converter.makeHtml(md);
     // storing current data to sessionStorage
@@ -222,15 +226,17 @@ containerPreview.addEventListener("scroll", function() {
     containerMarkdown.scrollTop = scrollPosition;
 });
 
-// // code editor copy button
-var all_code_box = document.querySelectorAll('code');
-all_code_box.forEach(element => {
-    element.classList.add('code-boxes');
-});
-var got_code_boxes = document.querySelectorAll('.code-boxes');
-got_code_boxes.forEach(element=>{
-    if(element.textContent.split('\n').length>1){
-        element.style.width = "100%";
-        element.style.whiteSpace  = "pre-wrap";
-    }
-})
+// // code editor code width
+function code_width(){
+    var all_code_box = document.querySelectorAll('code');
+    all_code_box.forEach(element => {
+        element.classList.add('code-boxes');
+    });
+    var got_code_boxes = document.querySelectorAll('.code-boxes');
+    got_code_boxes.forEach(element=>{
+        if(element.textContent.split('\n').length>1){
+            element.style.width = "100%";
+            element.style.whiteSpace  = "pre-wrap";
+        }
+    })
+}

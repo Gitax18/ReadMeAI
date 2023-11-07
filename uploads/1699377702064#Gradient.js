@@ -1,19 +1,6 @@
 var c = document.getElementById('canv');
 var $ = c.getContext('2d');
 
-// JavaScript code to change canvas height on mobile devices
-function setCanvasHeight() {
-  const canvas = document.getElementById('canv');
-
-  if (window.innerWidth <= 768 ||  window.innerWidth <= 1024) 
-  {
-    canvas.setAttribute('height', '35');
-  }
-}
-setCanvasHeight();
-
-window.addEventListener('resize', setCanvasHeight);
-
 
 var col = function(x, y, r, g, b) {
   $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
@@ -44,3 +31,8 @@ var run = function() {
 }
 
 run();
+
+
+
+
+

@@ -98,7 +98,7 @@ canvas {
 .nav-container{
     height: fit-content;
     width: fit-content;
-    background-color: #999;
+    background-color: #222;
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -115,7 +115,6 @@ canvas {
     width: 2.7rem;
     display: grid;
     place-items: center;
-    background-color: #222;
 }
 
 .nav-item a{
@@ -130,20 +129,10 @@ canvas {
 /* mobile queeryss */
  @media screen and (max-width: 767px) {
     .canvas-container{
-        height: 35vh;
-        transform: scale(4.9);
+        height: auto;
     }
     .image_container{
         display: none;
-    }
-}
-  
-  /* Tablet Styles */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .canvas-container{
-        height: 32vh;
-        width: 100%;
-        clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 100%);
     }
     .container{
         display: flex;
@@ -152,26 +141,75 @@ canvas {
         width: 100%;
         gap: 50px;
         position: absolute;
+        top: 45%;
+        transform: translateY(-55%);
+        padding: 0em 2em 0em 2em;
+    }
+    h1{
+        padding-left: 0px;
+        font-size: 3.5em;
+
+    }
+    .text-container>a{
+        margin-left: 0px;
+    }
+    .nav-container{
+        width: 100%;
+        top: 97%;
+    }
+    .navbar{
+        flex-direction: row;
+    }
+    .nav-item{
+        width: 15.7rem;
+        aspect-ratio: 2/1;
+    }
+}
+  
+  /* Tablet Styles */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .canvas-container{
+        height: 32vh;
+        width: 100%;
+        clip-path:polygon(0 0, 100% 0%, 100% 35%, 0 130%);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
         top: 30%;
         transform: translateY(-30%);
         padding: 0em 2em 0em 2em;
     }
+    .text-container{
+        align-items: center;
+    }
     h1{
 
         line-height: 1.2em;
-        font-size: 5em;
+        font-size: 6.5em;
         max-width: 18ch;
-        padding-left: 120px;
+        padding-left: 20px;
         color: white;
         margin: 0px;
     }
 
     .image_container{
         width: 100%;
-        height: 40vh;
+        text-align: center;
+        height: 35vh;
     }
-
+    .image_container img{
+        height: inherit;
+        width: 80%;
+    }
     .nav-container{
         top: 45%;
+    }
+
+    .text-container>a{
+        margin-left: 0px;
     }
   }
