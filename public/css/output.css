@@ -174,4 +174,59 @@ p:has(> a > img) {
     transition: background-color 0.5s, color 0.5s;
 
 }
+.mobile-container{
+    display: none;
+}
+/* tablet query */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .main{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .phone{
+        visibility: hidden;
+    }
+    .mobile-container{
+        display: none;
+    }
+}
 
+/* mobile query */
+@media screen and (max-width: 767px) {
+    .main{
+        flex-direction: column;
+    }
+    #codeditor{
+        height: 20vh !important;
+        visibility: hidden !important;
+    }
+    .container{
+        width: 100%;
+    }
+    .phone{
+        visibility: hidden;
+    }
+    #mobile-container{
+        height: 20vh;
+    }
+    .mobile-container{
+        position: absolute;
+        z-index: 1;
+        opacity: 0.9;
+        background: #ffffff;
+        width: 95%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Text styling */
+      .mobile-container p{
+        text-align: center;
+        font-size: 2em;
+        color: #333;
+      }
+}
