@@ -16,6 +16,9 @@
 
 The README Generator is a platform that allows users to upload a single-file code and describe their project. The AI generates a Markdown code, which can be edited in real-time using a code editor, and the changes are previewed instantly.
 
+## ReadMeAI is now live at [readmeai.live](http://readmeai.live)
+
+
 ## Navigation
 - [🤖 ReadmeAI 📃](#-readmeai-)
   - [Overview](#overview)
