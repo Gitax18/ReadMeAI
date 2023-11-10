@@ -3,7 +3,7 @@
 [![Untitled-1-01-1.jpg](https://i.postimg.cc/L8XpLZBM/Untitled-1-01-1.jpg)](https://postimg.cc/rKv3LsPh)
 
 
-[![Views 👀](https://hits.dwyl.com/Gitax18/ReadMeAI.svg?style=flat-square&show=unique)](http://hits.dwyl.com/Gitax18/ReadMeAI)
+[![Repo Views 👀](https://visitcount.itsvg.in/api?id=Gitax18&label=Repo%20Views&icon=5&pretty=false)](https://visitcount.itsvg.in)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
