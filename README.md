@@ -4,7 +4,7 @@
 
 https://github.com/Gitax18/ReadMeAI
 
-[![Views 🔥](https://github.com/Gitax18/ReadMeAI.svg?style=flat&show=unique)](https://github.com/Gitax18/ReadMeAI)
+  [![Views 👀](https://hits.dwyl.com/Gitax18/ReadMeAI.svg?style=flat-square&show=unique)](http://hits.dwyl.com/Gitax18/ReadMeAI)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
