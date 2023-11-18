@@ -2,7 +2,7 @@
 
 [![Untitled-1-01-1.jpg](https://i.postimg.cc/L8XpLZBM/Untitled-1-01-1.jpg)](https://postimg.cc/rKv3LsPh)
 
-
+![👀](https://komarev.com/ghpvc/?username=Gitax18&color=blueviolet)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
