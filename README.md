@@ -2,7 +2,7 @@
 
 [![Untitled-1-01-1.jpg](https://i.postimg.cc/L8XpLZBM/Untitled-1-01-1.jpg)](https://postimg.cc/rKv3LsPh)
 
-![👀](https://komarev.com/ghpvc/?username=Gitax18&color=blueviolet)
+![Visitors 👀](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FGitax18%2FReadMeAI%2Ftree%2Fproduction&label=REPO%20VIEWS%20%F0%9F%91%80&countColor=%23ba68c8&style=plastic&labelStyle=upper)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
