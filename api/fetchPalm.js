@@ -4,7 +4,7 @@ const { GoogleAuth } = require("google-auth-library");
 
 
 const MODEL_NAME = "models/text-bison-001";
-const API_KEY = "AIzaSyBWBnCwyElOimCCRk3osxShW_cJCqdHCeQ";
+const API_KEY = "<API Key>";
 
 const client = new TextServiceClient({
   authClient: new GoogleAuth().fromAPIKey(API_KEY),
